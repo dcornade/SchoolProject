@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.OleDb;
+using System.IO;
+using System.Drawing.Imaging;
 
 namespace SchoolProject
 {
@@ -31,6 +33,114 @@ namespace SchoolProject
         }
 
         #region User-Created-Functions
+
+        private void inputerrorclean(object sender)
+        {
+            Control control = sender as Control;
+            Control ParentControl = control.Parent;
+            if (ParentControl.Controls.ContainsKey("inputerrorLabel"))
+            {
+                ParentControl.Controls.RemoveByKey("inputerrorLabel");
+            }
+        }
+
+        private void inputerrorshow(object sender)
+        {
+            Control control = sender as Control;
+            Control control1 = control.Parent;
+            Panel panel = null;
+            foreach(Control control2 in control1.Controls)
+            {
+                if(control2 is Panel)
+                {
+                    foreach(Control control3 in control2.Controls)
+                    {
+                        if(control3 is TextBox)
+                        {
+                            TextBox textBox = control3 as TextBox;
+                            if(textBox.Multiline == true)
+                            {
+                                panel = (Panel)textBox.Parent;
+                            }
+                        }
+                    }
+                }
+            }
+            Label inputerrorLabel = new Label();
+            inputerrorLabel.AutoSize = true;
+            inputerrorLabel.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            inputerrorLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            inputerrorLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(69)))), ((int)(((byte)(2)))));
+            inputerrorLabel.Text = "Please Fill all Fields Required";
+            inputerrorLabel.Location = new Point(panel.Left + panel.Width + 5 - inputerrorLabel.Width, (panel.Top) - inputerrorLabel.Height);
+            inputerrorLabel.Name = "inputerrorLabel";
+            inputerrorLabel.Size = new System.Drawing.Size(166, 16);
+            inputerrorLabel.TabIndex = 52;
+            inputerrorLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            control1.Controls.Add(inputerrorLabel);
+        }
+
+        private void phone_error(object sender)
+        {
+            Control control = sender as Control;
+            Control control1 = control.Parent;
+            Control control2 = control1.Parent;
+            Label ErrorLabel = new Label();
+            ErrorLabel.AutoSize = true;
+            ErrorLabel.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            ErrorLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            ErrorLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(69)))), ((int)(((byte)(2)))));
+            ErrorLabel.Location = new Point(control1.Left + control1.Width + 5, (control1.Top - control1.Height/2)+ErrorLabel.Height/2);
+            ErrorLabel.Name = "ErrorLabel";
+            ErrorLabel.Size = new System.Drawing.Size(166, 16);
+            ErrorLabel.TabIndex = 52;
+            ErrorLabel.Text = "Please Enter Only Number";
+            ErrorLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            control2.Controls.Add(ErrorLabel);
+        }
+
+        private bool checkinput(object sender)
+        {
+            int flag = 0;
+            Control control = sender as Control;
+            Control control1 = control.Parent;
+            foreach(Control control2 in control1.Controls)
+            {
+                if(control2 is TextBox)
+                {
+                    TextBox textBox = control2 as TextBox;
+                    if(textBox.Text is "")
+                    {
+                        flag = 1;
+                        break;
+                    }
+                }else if(control2 is ComboBox)
+                {
+                    ComboBox box = control2 as ComboBox;
+                    if(box.Text == "")
+                    {
+                        flag = 1;
+                        break;
+                    }
+                }else if(control2 is PictureBox)
+                {
+                    PictureBox picture = control2 as PictureBox;
+                    if(picture.Image == null)
+                    {
+                        flag = 1;
+                        break;
+                    }
+                }
+            }
+            if(flag == 1)
+            {
+                return false;
+            }
+            else
+            {
+                return true;
+            }
+        }
 
         private Panel panelchecknull(object sender)
         {
@@ -85,10 +195,29 @@ namespace SchoolProject
         {
             foreach(Panel panel in SidePanel.Controls)
             {
-                
-                if(panel.Name.Substring(4) == activepanel.Name || panel.Name.Substring(4, 3) == activepanel.Name.Substring(0,3))
+
+                if (panel.Name.Substring(0, 3) == "Exp")
+                {
+                    if (activepanel.Name.Substring(activepanel.Name.Length - 5) != "Panel")
+                    {
+                        foreach (Panel panel1 in panel.Controls)
+                        {
+                            if (panel1.Name.Substring(4) == activepanel.Name)
+                            {
+                                panel1.BackColor = Color.FromArgb(255, 215, 184);
+                                label19.Text = "expran";
+                            }
+                            else
+                            {
+                                panel1.BackColor = Color.FromArgb(254, 171, 109);
+                            }
+                        }
+                    }
+                }
+                if (panel.Name.Substring(4) == activepanel.Name || panel.Name.Substring(4, 3) == activepanel.Name.Substring(0,3))
                 {
                     panel.BackColor = Color.FromArgb(254, 171, 109);
+                    
                 }
                 else
                 {
@@ -157,6 +286,103 @@ namespace SchoolProject
             panel23.Top = panel24.Top = panel25.Top = 80 * vh - getCenterHeight(panel23);
             panel24.Left = 52 * vw - panel24.Width / 2;
             panel25.Left = 85 * vw - panel25.Width / 2;
+        }
+
+        private void Studentidsuggest(string str,object sender)
+        {
+            TextBox text = sender as TextBox;
+            oleDb.Open();
+            string sql = "Select * from Student";
+            OleDbDataAdapter adapter = new OleDbDataAdapter(sql, oleDb);
+            DataSet dataSet = new DataSet();
+            adapter.Fill(dataSet);
+            for(int i = 0; i < dataSet.Tables[0].Rows.Count; i++)
+            {
+                if (dataSet.Tables[0].Rows[i]["Student_id"].ToString().Substring(0, text.Text.Length) == text.Text)
+                {
+
+                } 
+            }
+        }
+
+        private void SettingUpdatePage()
+        {
+            int vh = panel4.Height / 100;
+            int vw = panel4.Width / 100;
+            label53.Top = 3 * vh;
+            centerwidth(label53);
+            panel35.Left = panel36.Left = panel37.Left = panel39.Left = panel34.Left = panel33.Left = 7 * vw;
+            panel35.Top = 10 * vh;
+            SuggestionPanel.Top = panel35.Top + panel35.Height;
+            SuggestionPanel.Left = panel35.Left;
+            label47.Left = label48.Left = label49.Left = label52.Left = label46.Left = label45.Left = 7 * vw;
+            label47.Top = panel35.Top - label47.Height;
+            panel36.Top = 25 * vh - getCenterHeight(panel36);
+            label48.Top = panel36.Top - label48.Height;
+            panel37.Top = 40 * vh - getCenterHeight(panel37);
+            label49.Top = panel37.Top - label49.Height;
+            panel39.Top = 55 * vh - getCenterHeight(panel39);
+            label52.Top = panel39.Top - label52.Height;
+            panel34.Top = 70 * vh - getCenterHeight(panel34);
+            label46.Top = panel34.Top - label46.Height;
+            panel33.Top = 88 * vh - getCenterHeight(panel33);
+            label45.Top = panel33.Top - label45.Height;
+            pictureBox23.Top = 12 * vh;
+            pictureBox23.Left = UpdatePageButton.Left = 80 * vw;
+            label50.Top = pictureBox23.Top + pictureBox23.Height;
+            UpdatePageButton.Top = 50 * vh;
+            label44.Left = (pictureBox23.Left + pictureBox23.Width / 2) - label44.Width / 2;
+            panel38.Left = comboBox4.Left = comboBox3.Left = label50.Left = label51.Left = label43.Left = 45 * vw;
+            panel38.Top = 10 * vh;
+            label50.Top = panel38.Top - label50.Height;
+            comboBox4.Top = 20 * vh;
+            label51.Top = comboBox4.Top - label51.Height;
+            comboBox3.Top = 30 * vh;
+            label43.Top = comboBox2.Top - label43.Height;
+        }
+        
+        private void SettingInsertPage()
+        {
+            oleDb.Open();
+            string sql = "Select * from Student";
+            OleDbDataAdapter adapter = new OleDbDataAdapter(sql,oleDb);
+            DataSet ds = new DataSet();
+            adapter.Fill(ds);
+            int students = ds.Tables[0].Rows.Count + 1;
+            DateTime dateTime = DateTime.Today;
+            int year = dateTime.Year;
+            textBox1.Text = students.ToString() + year.ToString();
+            oleDb.Close();
+            int vh = panel4.Height / 100;
+            int vw = panel4.Width / 100;
+            label32.Top = 3 * vh;
+            centerwidth(label32);
+            panel27.Left = panel26.Left = panel28.Left = panel29.Left = panel30.Left = panel31.Left = 7 * vw;
+            panel27.Top = 10 * vh;
+            label33.Left = label34.Left = label35.Left = label36.Left = label37.Left = label38.Left = 7 * vw;
+            label33.Top = panel27.Top - label33.Height;
+            panel28.Top = 25 * vh - getCenterHeight(panel28);
+            label34.Top = panel28.Top - label34.Height;
+            panel26.Top = 40 * vh - getCenterHeight(panel26);
+            label35.Top = panel26.Top - label35.Height;
+            panel29.Top = 55 * vh - getCenterHeight(panel29);
+            label36.Top = panel29.Top - label36.Height;
+            panel30.Top = 70 * vh - getCenterHeight(panel30);
+            label37.Top = panel30.Top - label37.Height;
+            panel31.Top = 88 * vh - getCenterHeight(panel31);
+            label38.Top = panel31.Top - label38.Height;
+            pictureBox22.Top = 12 * vh;
+            pictureBox22.Left = InsertPageNewRecordButton.Left = 80 * vw;
+            label41.Top = pictureBox22.Top + pictureBox22.Height;
+            InsertPageNewRecordButton.Top = 50 * vh;
+            label41.Left = (pictureBox22.Left + pictureBox22.Width / 2) - label41.Width / 2;
+            panel32.Left = comboBox1.Left = comboBox2.Left = label39.Left = label40.Left = label42.Left = 45 * vw;
+            panel32.Top = 10 * vh;
+            label39.Top = panel32.Top - label39.Height;
+            comboBox1.Top = 20 * vh;
+            label40.Top = comboBox1.Top - label40.Height;
+            comboBox2.Top = 30 * vh;
+            label42.Top = comboBox2.Top - label42.Height;
         }
 
         private void SettingDashboardPage()
@@ -336,7 +562,7 @@ namespace SchoolProject
                 panel = (Panel)panel.Parent;
             }
             string sendername = panel.Name;
-            label19.Text = sendername.Substring(4);
+            //label19.Text = sendername.Substring(4);
             SettingActivePanel(sendername.Substring(4));
         }
 
@@ -619,7 +845,6 @@ namespace SchoolProject
             {
                 SidePanel.Width = SidePanelExpanded;
             }
-            //&& panel.Name.Substring(4) == activepanel.Name
         }
 
         private void DashboardPanel_SizeChanged(object sender, EventArgs e)
@@ -632,6 +857,56 @@ namespace SchoolProject
             SettingStudentDataPage();
         }
 
+        private void StudentInsertData_SizeChanged(object sender, EventArgs e)
+        {
+            SettingInsertPage();
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string[] arr = { "F", "P", "A", "S" };
+            comboBox2.Items.Clear();
+            comboBox2.Text = "";
+            for(int i =1;i < 6; i++)
+            {
+                comboBox2.Items.Add(arr[comboBox1.SelectedIndex] + "0" + i);
+            }
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            studentSidePanelShow();
+            SettingActivePanel("StudentInsertData");
+
+        }
+
+        private void InsertPageNewRecordButton_Click(object sender, EventArgs e)
+        {
+            if (checkinput(sender))
+            {
+                inputerrorclean(sender);
+                oleDb.Open();
+                string classstring = comboBox1.GetItemText(comboBox1.SelectedItem);
+                string secstring = comboBox2.GetItemText(comboBox2.SelectedItem);
+                string sql = "Insert into Student values('" + textBox1.Text + "','" + textBox2.Text + "','" + textBox3.Text + "','" + textBox6.Text + "','" + textBox5.Text + "','" + textBox4.Text + "','" + classstring + "','" + textBox7.Text + "','" + secstring + "','" + null + "','" + null + "', @Picture)"; 
+                OleDbCommand dbCommand = new OleDbCommand(sql,oleDb);
+                using(MemoryStream stream = new MemoryStream())
+                {
+                    pictureBox22.Image.Save(stream, ImageFormat.Jpeg);
+                    byte[] insertPicture = new byte[stream.Length];
+                    stream.Position = 0;
+                    stream.Read(insertPicture, 0, insertPicture.Length);
+                    dbCommand.Parameters.AddWithValue("@Picture", insertPicture);
+                }
+                dbCommand.ExecuteNonQuery();
+                label19.Text = "Record Inserted Successfully";
+            }
+            else
+            {
+                inputerrorshow(sender);
+            }
+        }
+
         private void ExpPanel_Mouse_Enter(object sender,EventArgs e)
         {
             Panel panel = panelchecknull(sender);
@@ -639,11 +914,278 @@ namespace SchoolProject
             if (panel.Name.Substring(4) != activepanel.Name) { panel.BackColor = Color.FromArgb(255, 215, 184); }
         }
 
+        private void pictureBox22_Click(object sender, EventArgs e)
+        {
+            openFileDialog1.DefaultExt = "jpg";
+            openFileDialog1.Filter = "JPG (*.jpg)|*.jpg|PNG (*.png)|*.png";
+            openFileDialog1.FilterIndex = 1;
+            if(openFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                pictureBox22.Image = new Bitmap(openFileDialog1.FileName);
+            }
+        }
+
+        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            int rollcount = 1;
+            oleDb.Open();
+            string sql = "Select * from Student";
+            OleDbDataAdapter dataAdapter = new OleDbDataAdapter(sql,oleDb);
+            DataSet ds = new DataSet();
+            dataAdapter.Fill(ds);
+            for (int i = 0; i < ds.Tables[0].Rows.Count; i++)
+            {
+                if(ds.Tables[0].Rows[i]["Roll_no"].ToString().Substring(0,3) == comboBox2.GetItemText(comboBox2.SelectedItem))
+                {
+                    rollcount++;
+                } 
+            }
+            oleDb.Close();
+            DateTime dateTime = DateTime.Today;
+            int year = dateTime.Year;
+            string batchstring = comboBox2.GetItemText(comboBox2.SelectedItem);
+            textBox7.Text = batchstring + year.ToString() + rollcount.ToString();
+        }
+
+        private void StudentUpdateData_SizeChanged(object sender, EventArgs e)
+        {
+            SettingUpdatePage();
+        }
+
+        private void textBox10_KeyUp(object sender, KeyEventArgs e)
+        {
+            if(e.KeyCode == Keys.Enter)
+            {
+                oleDb.Open();
+                string sql = "Select * from Student where Student_id = '" + textBox10.Text + "'";
+                OleDbDataAdapter adapter = new OleDbDataAdapter(sql, oleDb);
+                DataSet ds = new DataSet();
+                adapter.Fill(ds);
+                if(ds.Tables[0].Rows.Count > 0)
+                {
+                    textBox10.ReadOnly = true;
+                    textBox11.Text= ds.Tables[0].Rows[0]["Student_name"].ToString();
+                    textBox12.Text = ds.Tables[0].Rows[0]["Father_name"].ToString();
+                    textBox14.Text = ds.Tables[0].Rows[0]["Voter_id"].ToString();
+                    textBox9.Text = ds.Tables[0].Rows[0]["Phone"].ToString();
+                    textBox8.Text = ds.Tables[0].Rows[0]["Address"].ToString();
+                    textBox13.Text = ds.Tables[0].Rows[0]["Roll_no"].ToString();
+                    comboBox4.Text = ds.Tables[0].Rows[0]["Class"].ToString();
+                    comboBox3.Text = ds.Tables[0].Rows[0]["Section"].ToString();
+                    pictureBox23.Image = Image.FromStream(new MemoryStream(ds.Tables[0].Rows[0]["picnew"] as byte[]));
+                }
+                oleDb.Close();
+            }
+        }
+
+        private void comboBox4_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string[] arr = { "F", "P", "A", "S" };
+            comboBox3.Items.Clear();
+            comboBox3.Text = "";
+            for (int i = 1; i < 6; i++)
+            {
+                comboBox3.Items.Add(arr[comboBox4.SelectedIndex] + "0" + i);
+            }
+        }
+
+        private void textBox15_KeyUp(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                oleDb.Open();
+                string sql = "Select * from Student where Student_id = '" + textBox15.Text + "'";
+                OleDbDataAdapter adapter = new OleDbDataAdapter(sql, oleDb);
+                DataSet ds = new DataSet();
+                adapter.Fill(ds);
+                if (ds.Tables[0].Rows.Count > 0)
+                {
+                    Panel picturepanel1 = new Panel();
+                    picturepanel1.Dock = System.Windows.Forms.DockStyle.Left;
+                    picturepanel1.Location = new System.Drawing.Point(0, 0);
+                    picturepanel1.Name = "picturepanel1";
+                    picturepanel1.Size = new System.Drawing.Size(80, 66);
+                    picturepanel1.TabIndex = 0;
+                    picturepanel1.Paint += title_btn_picture_set;
+
+
+                    PictureBox pictureBox1img = new PictureBox();
+                    pictureBox1img.Location = new System.Drawing.Point(9, 8);
+                    pictureBox1img.Name = "pictureBox24";
+                    pictureBox1img.Size = new System.Drawing.Size(55, 45);
+                    pictureBox1img.TabIndex = 0;
+                    pictureBox1img.TabStop = false;
+                    pictureBox1img.Image = Image.FromStream(new MemoryStream(ds.Tables[0].Rows[0]["picnew"] as byte[]));
+                    picturepanel1.Controls.Add(pictureBox1img);
+                    pictureBox1img.SizeMode = PictureBoxSizeMode.StretchImage;
+                    //panel44.Controls.Add(picturepanel1);
+
+                    Label namelabel = new Label();
+                    namelabel.Dock = System.Windows.Forms.DockStyle.Left;
+                    namelabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+                    namelabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(69)))), ((int)(((byte)(2)))));
+                    namelabel.Location = new System.Drawing.Point(0, 0);
+                    namelabel.Name = "namelabel";
+                    namelabel.Size = new System.Drawing.Size(126, 66);
+                    namelabel.TabIndex = 76;
+                    namelabel.Text = ds.Tables[0].Rows[0]["Student_name"].ToString();
+                    namelabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+                    //panel44.Controls.Add(namelabel);
+
+
+                    Label Fathernamelabel = new Label();
+                    Fathernamelabel.Dock = System.Windows.Forms.DockStyle.Left;
+                    Fathernamelabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+                    Fathernamelabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(69)))), ((int)(((byte)(2)))));
+                    Fathernamelabel.Location = new System.Drawing.Point(0, 0);
+                    Fathernamelabel.Name = "namelabel";
+                    Fathernamelabel.Size = new System.Drawing.Size(126, 66);
+                    Fathernamelabel.TabIndex = 76;
+                    Fathernamelabel.Text = ds.Tables[0].Rows[0]["Father_name"].ToString();
+                    Fathernamelabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+
+                    Label AddressNameLabel = new Label();
+                    AddressNameLabel.Dock = System.Windows.Forms.DockStyle.Left;
+                    AddressNameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+                    AddressNameLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(69)))), ((int)(((byte)(2)))));
+                    AddressNameLabel.Location = new System.Drawing.Point(0, 0);
+                    AddressNameLabel.Name = "namelabel";
+                    AddressNameLabel.Size = new System.Drawing.Size(126, 66);
+                    AddressNameLabel.TabIndex = 76;
+                    AddressNameLabel.Text = ds.Tables[0].Rows[0]["Address"].ToString();
+                    AddressNameLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+
+                    Label PhoneNameLabel = new Label();
+                    PhoneNameLabel.Dock = System.Windows.Forms.DockStyle.Left;
+                    PhoneNameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+                    PhoneNameLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(69)))), ((int)(((byte)(2)))));
+                    PhoneNameLabel.Location = new System.Drawing.Point(0, 0);
+                    PhoneNameLabel.Name = "namelabel";
+                    PhoneNameLabel.Size = new System.Drawing.Size(126, 66);
+                    PhoneNameLabel.TabIndex = 76;
+                    PhoneNameLabel.Text = ds.Tables[0].Rows[0]["Phone"].ToString();
+                    PhoneNameLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+
+                    Label VoterIdLabel = new Label();
+                    VoterIdLabel.Dock = System.Windows.Forms.DockStyle.Left;
+                    VoterIdLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+                    VoterIdLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(69)))), ((int)(((byte)(2)))));
+                    VoterIdLabel.Location = new System.Drawing.Point(0, 0);
+                    VoterIdLabel.Name = "namelabel";
+                    VoterIdLabel.Size = new System.Drawing.Size(126, 66);
+                    VoterIdLabel.TabIndex = 76;
+                    VoterIdLabel.Text = ds.Tables[0].Rows[0]["Voter_id"].ToString();
+                    VoterIdLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+
+                    Label ClassIdLabel = new Label();
+                    ClassIdLabel.Dock = System.Windows.Forms.DockStyle.Left;
+                    ClassIdLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+                    ClassIdLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(69)))), ((int)(((byte)(2)))));
+                    ClassIdLabel.Location = new System.Drawing.Point(0, 0);
+                    ClassIdLabel.Name = "namelabel";
+                    ClassIdLabel.Size = new System.Drawing.Size(126, 66);
+                    ClassIdLabel.TabIndex = 76;
+                    ClassIdLabel.Text = ds.Tables[0].Rows[0]["Class"].ToString();
+                    ClassIdLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+
+                    Label RollIdLabel = new Label();
+                    RollIdLabel.Dock = System.Windows.Forms.DockStyle.Left;
+                    RollIdLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+                    RollIdLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(69)))), ((int)(((byte)(2)))));
+                    RollIdLabel.Location = new System.Drawing.Point(0, 0);
+                    RollIdLabel.Name = "namelabel";
+                    RollIdLabel.Size = new System.Drawing.Size(126, 66);
+                    RollIdLabel.TabIndex = 76;
+                    RollIdLabel.Text = ds.Tables[0].Rows[0]["Roll_no"].ToString();
+                    RollIdLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+
+                    Label SectionIdLabel = new Label();
+                    SectionIdLabel.Dock = System.Windows.Forms.DockStyle.Left;
+                    SectionIdLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+                    SectionIdLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(69)))), ((int)(((byte)(2)))));
+                    SectionIdLabel.Location = new System.Drawing.Point(0, 0);
+                    SectionIdLabel.Name = "namelabel";
+                    SectionIdLabel.Size = new System.Drawing.Size(126, 66);
+                    SectionIdLabel.TabIndex = 76;
+                    SectionIdLabel.Text = ds.Tables[0].Rows[0]["Section"].ToString();
+                    SectionIdLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+
+
+                    panel44.Controls.Add(SectionIdLabel);
+                    panel44.Controls.Add(RollIdLabel);
+                    panel44.Controls.Add(ClassIdLabel);
+                    panel44.Controls.Add(VoterIdLabel);
+                    panel44.Controls.Add(PhoneNameLabel);
+                    panel44.Controls.Add(AddressNameLabel);
+                    panel44.Controls.Add(Fathernamelabel);
+                    panel44.Controls.Add(namelabel);
+                    panel44.Controls.Add(picturepanel1);
+
+                }   
+                oleDb.Close();
+            }
+        }
+
+        //private void UpdatePageButton_Click(object sender, EventArgs e)
+        //{
+        //    if (checkinput(sender))
+        //    {
+        //        inputerrorclean(sender);
+        //        oleDb.Open();
+        //        string classstring = comboBox1.GetItemText(comboBox1.SelectedItem);
+        //        string secstring = comboBox2.GetItemText(comboBox2.SelectedItem);
+        //        string sql = "Update Student Set Student_id = '" + textBox2.Text + "','" + textBox3.Text + "','" + textBox6.Text + "','" + textBox5.Text + "','" + textBox4.Text + "','" + classstring + "','" + textBox7.Text + "','" + secstring + "','" + null + "','" + null + "', @Picture)";
+        //        OleDbCommand dbCommand = new OleDbCommand(sql, oleDb);
+        //        using (MemoryStream stream = new MemoryStream())
+        //        {
+        //            pictureBox22.Image.Save(stream, ImageFormat.Jpeg);
+        //            byte[] insertPicture = new byte[stream.Length];
+        //            stream.Position = 0;
+        //            stream.Read(insertPicture, 0, insertPicture.Length);
+        //            dbCommand.Parameters.AddWithValue("@Picture", insertPicture);
+        //        }
+        //        dbCommand.ExecuteNonQuery();
+        //        label19.Text = "Record Inserted Successfully";
+        //    }
+        //    else
+        //    {
+        //        inputerrorshow(sender);
+        //    }
+        //}
+
         private void ExpPanel_Mouse_Leave(object sender, EventArgs e)
         {
             Panel panel = panelchecknull(sender);
 
             if (panel.Name.Substring(4) != activepanel.Name) { panel.BackColor = Color.FromArgb(254, 171, 109); }
+        }
+
+        private void Phone_Number(object sender, KeyEventArgs e)
+        {
+
+            TextBox text = sender as TextBox;
+            try
+            {
+                char keypressed = (char)e.KeyCode;
+                string handledstring = Char.ToString(keypressed);
+                int pelican = Int32.Parse(handledstring);
+                if (text.Parent.Parent.Controls.ContainsKey("ErrorLabel"))
+                {
+                    text.Parent.Parent.Controls.RemoveByKey("ErrorLabel");
+                }
+            }
+            catch
+            {
+                
+                if (text.Text.Length != 0 && e.KeyCode != Keys.Back)
+                {
+                    phone_error(sender);
+                    text.Text = text.Text.Substring(0, text.Text.Length - 1);
+                }
+                label19.Text = "It can't be backspace";
+                text.SelectionStart = text.Text.Length;
+                text.SelectionLength = 0;
+            }
         }
     }
 }

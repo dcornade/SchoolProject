@@ -30,6 +30,7 @@ namespace SchoolProject
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -39,56 +40,156 @@ namespace SchoolProject
             this.panel2 = new System.Windows.Forms.Panel();
             this.label19 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.PaddingPanel = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.SidePanel = new System.Windows.Forms.Panel();
             this.ExpStudentDataPanel = new System.Windows.Forms.Panel();
             this.SideSearchDataPanel = new System.Windows.Forms.Panel();
             this.label30 = new System.Windows.Forms.Label();
             this.panel21 = new System.Windows.Forms.Panel();
-            this.SideDeleteDataPanel = new System.Windows.Forms.Panel();
+            this.pictureBox18 = new System.Windows.Forms.PictureBox();
+            this.SideStudentDeleteData = new System.Windows.Forms.Panel();
             this.label29 = new System.Windows.Forms.Label();
             this.panel19 = new System.Windows.Forms.Panel();
-            this.SideUpdateDataPanel = new System.Windows.Forms.Panel();
+            this.pictureBox17 = new System.Windows.Forms.PictureBox();
+            this.SideStudentUpdateData = new System.Windows.Forms.Panel();
             this.label28 = new System.Windows.Forms.Label();
             this.panel17 = new System.Windows.Forms.Panel();
+            this.pictureBox16 = new System.Windows.Forms.PictureBox();
             this.SideStudentInsertData = new System.Windows.Forms.Panel();
             this.label27 = new System.Windows.Forms.Label();
             this.panel15 = new System.Windows.Forms.Panel();
+            this.pictureBox15 = new System.Windows.Forms.PictureBox();
             this.SideBusDataPanel = new System.Windows.Forms.Panel();
             this.label25 = new System.Windows.Forms.Label();
             this.panel13 = new System.Windows.Forms.Panel();
+            this.pictureBox14 = new System.Windows.Forms.PictureBox();
             this.SideLibraryDataPanel = new System.Windows.Forms.Panel();
             this.label24 = new System.Windows.Forms.Label();
             this.panel12 = new System.Windows.Forms.Panel();
+            this.pictureBox13 = new System.Windows.Forms.PictureBox();
             this.SideStudentDataPanel = new System.Windows.Forms.Panel();
             this.label23 = new System.Windows.Forms.Label();
             this.panel11 = new System.Windows.Forms.Panel();
+            this.pictureBox12 = new System.Windows.Forms.PictureBox();
             this.SideDashboardPanel = new System.Windows.Forms.Panel();
             this.label22 = new System.Windows.Forms.Label();
             this.panel10 = new System.Windows.Forms.Panel();
+            this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.SideRegistrationPanel = new System.Windows.Forms.Panel();
             this.label9 = new System.Windows.Forms.Label();
             this.panel9 = new System.Windows.Forms.Panel();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.SideLoginPanel = new System.Windows.Forms.Panel();
             this.label8 = new System.Windows.Forms.Label();
             this.panel8 = new System.Windows.Forms.Panel();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.StudentUpdateData = new System.Windows.Forms.Panel();
+            this.SuggestionPanel = new System.Windows.Forms.Panel();
+            this.panel40 = new System.Windows.Forms.Panel();
+            this.label54 = new System.Windows.Forms.Label();
+            this.UpdatePageButton = new System.Windows.Forms.Button();
+            this.label43 = new System.Windows.Forms.Label();
+            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.label44 = new System.Windows.Forms.Label();
+            this.panel33 = new System.Windows.Forms.Panel();
+            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.label45 = new System.Windows.Forms.Label();
+            this.panel34 = new System.Windows.Forms.Panel();
+            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.label46 = new System.Windows.Forms.Label();
+            this.panel35 = new System.Windows.Forms.Panel();
+            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.label47 = new System.Windows.Forms.Label();
+            this.panel36 = new System.Windows.Forms.Panel();
+            this.textBox11 = new System.Windows.Forms.TextBox();
+            this.label48 = new System.Windows.Forms.Label();
+            this.panel37 = new System.Windows.Forms.Panel();
+            this.textBox12 = new System.Windows.Forms.TextBox();
+            this.label49 = new System.Windows.Forms.Label();
+            this.panel38 = new System.Windows.Forms.Panel();
+            this.textBox13 = new System.Windows.Forms.TextBox();
+            this.label50 = new System.Windows.Forms.Label();
+            this.label51 = new System.Windows.Forms.Label();
+            this.comboBox4 = new System.Windows.Forms.ComboBox();
+            this.panel39 = new System.Windows.Forms.Panel();
+            this.textBox14 = new System.Windows.Forms.TextBox();
+            this.label52 = new System.Windows.Forms.Label();
+            this.pictureBox23 = new System.Windows.Forms.PictureBox();
+            this.label53 = new System.Windows.Forms.Label();
+            this.StudentInsertData = new System.Windows.Forms.Panel();
+            this.InsertPageNewRecordButton = new System.Windows.Forms.Button();
+            this.label42 = new System.Windows.Forms.Label();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.label41 = new System.Windows.Forms.Label();
+            this.panel31 = new System.Windows.Forms.Panel();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.label38 = new System.Windows.Forms.Label();
+            this.panel30 = new System.Windows.Forms.Panel();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.label37 = new System.Windows.Forms.Label();
+            this.panel27 = new System.Windows.Forms.Panel();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label33 = new System.Windows.Forms.Label();
+            this.panel28 = new System.Windows.Forms.Panel();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label34 = new System.Windows.Forms.Label();
+            this.panel26 = new System.Windows.Forms.Panel();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.label35 = new System.Windows.Forms.Label();
+            this.panel32 = new System.Windows.Forms.Panel();
+            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.label39 = new System.Windows.Forms.Label();
+            this.label40 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.panel29 = new System.Windows.Forms.Panel();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.label36 = new System.Windows.Forms.Label();
+            this.pictureBox22 = new System.Windows.Forms.PictureBox();
+            this.label32 = new System.Windows.Forms.Label();
+            this.StudentDataPanel = new System.Windows.Forms.Panel();
+            this.panel25 = new System.Windows.Forms.Panel();
+            this.button6 = new System.Windows.Forms.Button();
+            this.pictureBox21 = new System.Windows.Forms.PictureBox();
+            this.panel24 = new System.Windows.Forms.Panel();
+            this.button5 = new System.Windows.Forms.Button();
+            this.pictureBox20 = new System.Windows.Forms.PictureBox();
+            this.panel23 = new System.Windows.Forms.Panel();
+            this.button4 = new System.Windows.Forms.Button();
+            this.pictureBox19 = new System.Windows.Forms.PictureBox();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.label31 = new System.Windows.Forms.Label();
             this.DashboardPanel = new System.Windows.Forms.Panel();
+            this.panel22 = new System.Windows.Forms.Panel();
+            this.panel20 = new System.Windows.Forms.Panel();
+            this.panel18 = new System.Windows.Forms.Panel();
+            this.StudentContainerDashboardPanel = new System.Windows.Forms.Panel();
+            this.panel16 = new System.Windows.Forms.Panel();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.panel14 = new System.Windows.Forms.Panel();
             this.label26 = new System.Windows.Forms.Label();
             this.RegistrationPanel = new System.Windows.Forms.Panel();
             this.AdminBox = new System.Windows.Forms.CheckBox();
             this.label20 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.RegistConfirmPassPanel = new System.Windows.Forms.Panel();
+            this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.RegistConfirmText = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.Registbtn = new System.Windows.Forms.Button();
             this.RegistPassPanel = new System.Windows.Forms.Panel();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.RegistPassText = new System.Windows.Forms.TextBox();
             this.RegistUserPanel = new System.Windows.Forms.Panel();
             this.RegistUsertext = new System.Windows.Forms.TextBox();
@@ -101,149 +202,108 @@ namespace SchoolProject
             this.RegistPageBtn = new System.Windows.Forms.Button();
             this.LoginBtn = new System.Windows.Forms.Button();
             this.LoginPassPanel = new System.Windows.Forms.Panel();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.LoginPassText = new System.Windows.Forms.TextBox();
             this.LoginUserPanel = new System.Windows.Forms.Panel();
             this.LoginUserText = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.StudentContainerDashboardPanel = new System.Windows.Forms.Panel();
-            this.panel14 = new System.Windows.Forms.Panel();
-            this.panel16 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.panel18 = new System.Windows.Forms.Panel();
-            this.panel20 = new System.Windows.Forms.Panel();
-            this.panel22 = new System.Windows.Forms.Panel();
-            this.StudentDataPanel = new System.Windows.Forms.Panel();
-            this.label31 = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.panel23 = new System.Windows.Forms.Panel();
-            this.panel24 = new System.Windows.Forms.Panel();
-            this.panel25 = new System.Windows.Forms.Panel();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.pictureBox21 = new System.Windows.Forms.PictureBox();
-            this.pictureBox20 = new System.Windows.Forms.PictureBox();
-            this.pictureBox19 = new System.Windows.Forms.PictureBox();
-            this.pictureBox10 = new System.Windows.Forms.PictureBox();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.pictureBox18 = new System.Windows.Forms.PictureBox();
-            this.pictureBox17 = new System.Windows.Forms.PictureBox();
-            this.pictureBox16 = new System.Windows.Forms.PictureBox();
-            this.pictureBox15 = new System.Windows.Forms.PictureBox();
-            this.pictureBox14 = new System.Windows.Forms.PictureBox();
-            this.pictureBox13 = new System.Windows.Forms.PictureBox();
-            this.pictureBox12 = new System.Windows.Forms.PictureBox();
-            this.pictureBox11 = new System.Windows.Forms.PictureBox();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.StudentInsertData = new System.Windows.Forms.Panel();
-            this.label32 = new System.Windows.Forms.Label();
-            this.pictureBox22 = new System.Windows.Forms.PictureBox();
-            this.label33 = new System.Windows.Forms.Label();
-            this.panel27 = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.panel28 = new System.Windows.Forms.Panel();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label34 = new System.Windows.Forms.Label();
-            this.panel26 = new System.Windows.Forms.Panel();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.label35 = new System.Windows.Forms.Label();
-            this.panel29 = new System.Windows.Forms.Panel();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.label36 = new System.Windows.Forms.Label();
-            this.panel30 = new System.Windows.Forms.Panel();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.label37 = new System.Windows.Forms.Label();
-            this.panel31 = new System.Windows.Forms.Panel();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.label38 = new System.Windows.Forms.Label();
-            this.panel32 = new System.Windows.Forms.Panel();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.label39 = new System.Windows.Forms.Label();
-            this.panel33 = new System.Windows.Forms.Panel();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.label40 = new System.Windows.Forms.Label();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.StudentDeleteData = new System.Windows.Forms.Panel();
+            this.panel41 = new System.Windows.Forms.Panel();
+            this.panel42 = new System.Windows.Forms.Panel();
+            this.label55 = new System.Windows.Forms.Label();
+            this.panel43 = new System.Windows.Forms.Panel();
+            this.textBox15 = new System.Windows.Forms.TextBox();
+            this.label56 = new System.Windows.Forms.Label();
+            this.label57 = new System.Windows.Forms.Label();
+            this.panel44 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.panel7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.panel6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SidePanel.SuspendLayout();
             this.ExpStudentDataPanel.SuspendLayout();
             this.SideSearchDataPanel.SuspendLayout();
             this.panel21.SuspendLayout();
-            this.SideDeleteDataPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).BeginInit();
+            this.SideStudentDeleteData.SuspendLayout();
             this.panel19.SuspendLayout();
-            this.SideUpdateDataPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).BeginInit();
+            this.SideStudentUpdateData.SuspendLayout();
             this.panel17.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
             this.SideStudentInsertData.SuspendLayout();
             this.panel15.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
             this.SideBusDataPanel.SuspendLayout();
             this.panel13.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
             this.SideLibraryDataPanel.SuspendLayout();
             this.panel12.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
             this.SideStudentDataPanel.SuspendLayout();
             this.panel11.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
             this.SideDashboardPanel.SuspendLayout();
             this.panel10.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             this.SideRegistrationPanel.SuspendLayout();
             this.panel9.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             this.SideLoginPanel.SuspendLayout();
             this.panel8.SuspendLayout();
-            this.panel4.SuspendLayout();
-            this.DashboardPanel.SuspendLayout();
-            this.RegistrationPanel.SuspendLayout();
-            this.RegistConfirmPassPanel.SuspendLayout();
-            this.RegistPassPanel.SuspendLayout();
-            this.RegistUserPanel.SuspendLayout();
-            this.LoginPanel.SuspendLayout();
-            this.LoginPassPanel.SuspendLayout();
-            this.LoginUserPanel.SuspendLayout();
-            this.StudentContainerDashboardPanel.SuspendLayout();
-            this.panel16.SuspendLayout();
-            this.StudentDataPanel.SuspendLayout();
-            this.panel23.SuspendLayout();
-            this.panel24.SuspendLayout();
-            this.panel25.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel4.SuspendLayout();
+            this.StudentUpdateData.SuspendLayout();
+            this.SuggestionPanel.SuspendLayout();
+            this.panel40.SuspendLayout();
+            this.panel33.SuspendLayout();
+            this.panel34.SuspendLayout();
+            this.panel35.SuspendLayout();
+            this.panel36.SuspendLayout();
+            this.panel37.SuspendLayout();
+            this.panel38.SuspendLayout();
+            this.panel39.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox23)).BeginInit();
             this.StudentInsertData.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox22)).BeginInit();
+            this.panel31.SuspendLayout();
+            this.panel30.SuspendLayout();
             this.panel27.SuspendLayout();
             this.panel28.SuspendLayout();
             this.panel26.SuspendLayout();
-            this.panel29.SuspendLayout();
-            this.panel30.SuspendLayout();
-            this.panel31.SuspendLayout();
             this.panel32.SuspendLayout();
-            this.panel33.SuspendLayout();
+            this.panel29.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox22)).BeginInit();
+            this.StudentDataPanel.SuspendLayout();
+            this.panel25.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).BeginInit();
+            this.panel24.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).BeginInit();
+            this.panel23.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).BeginInit();
+            this.DashboardPanel.SuspendLayout();
+            this.StudentContainerDashboardPanel.SuspendLayout();
+            this.panel16.SuspendLayout();
+            this.RegistrationPanel.SuspendLayout();
+            this.RegistConfirmPassPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
+            this.RegistPassPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
+            this.RegistUserPanel.SuspendLayout();
+            this.LoginPanel.SuspendLayout();
+            this.LoginPassPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            this.LoginUserPanel.SuspendLayout();
+            this.StudentDeleteData.SuspendLayout();
+            this.panel41.SuspendLayout();
+            this.panel42.SuspendLayout();
+            this.panel43.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -262,6 +322,17 @@ namespace SchoolProject
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1455, 28);
             this.panel1.TabIndex = 0;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pictureBox1.Image = global::SchoolProject.Properties.Resources.twitter;
+            this.pictureBox1.Location = new System.Drawing.Point(1121, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(28, 26);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 7;
+            this.pictureBox1.TabStop = false;
             // 
             // label6
             // 
@@ -381,6 +452,17 @@ namespace SchoolProject
             this.label7.Text = "School Management System";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pictureBox5.Image = global::SchoolProject.Properties.Resources.my_logo2ico;
+            this.pictureBox5.Location = new System.Drawing.Point(5, 0);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(33, 32);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox5.TabIndex = 3;
+            this.pictureBox5.TabStop = false;
+            // 
             // PaddingPanel
             // 
             this.PaddingPanel.Dock = System.Windows.Forms.DockStyle.Left;
@@ -403,6 +485,19 @@ namespace SchoolProject
             this.panel7.MouseEnter += new System.EventHandler(this.title_btn_entered);
             this.panel7.MouseLeave += new System.EventHandler(this.title_btn_left);
             // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = global::SchoolProject.Properties.Resources.minimize;
+            this.pictureBox4.Location = new System.Drawing.Point(16, 12);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(12, 12);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox4.TabIndex = 2;
+            this.pictureBox4.TabStop = false;
+            this.pictureBox4.Click += new System.EventHandler(this.panel7_Click);
+            this.pictureBox4.MouseEnter += new System.EventHandler(this.picture_title_btn_entered);
+            this.pictureBox4.MouseLeave += new System.EventHandler(this.picture_title_btn_left);
+            // 
             // panel6
             // 
             this.panel6.Controls.Add(this.pictureBox3);
@@ -417,6 +512,19 @@ namespace SchoolProject
             this.panel6.MouseEnter += new System.EventHandler(this.title_btn_entered);
             this.panel6.MouseLeave += new System.EventHandler(this.title_btn_left);
             // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::SchoolProject.Properties.Resources.squares_min;
+            this.pictureBox3.Location = new System.Drawing.Point(19, 12);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(12, 12);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 1;
+            this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.panel6_Click);
+            this.pictureBox3.MouseEnter += new System.EventHandler(this.picture_title_btn_entered);
+            this.pictureBox3.MouseLeave += new System.EventHandler(this.picture_title_btn_left);
+            // 
             // panel5
             // 
             this.panel5.Controls.Add(this.pictureBox2);
@@ -430,6 +538,19 @@ namespace SchoolProject
             this.panel5.Paint += new System.Windows.Forms.PaintEventHandler(this.title_btn_picture_set);
             this.panel5.MouseEnter += new System.EventHandler(this.title_btn_entered);
             this.panel5.MouseLeave += new System.EventHandler(this.title_btn_left);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::SchoolProject.Properties.Resources.close;
+            this.pictureBox2.Location = new System.Drawing.Point(28, 12);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(12, 12);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 0;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.panel5_Click);
+            this.pictureBox2.MouseEnter += new System.EventHandler(this.picture_title_btn_entered);
+            this.pictureBox2.MouseLeave += new System.EventHandler(this.picture_title_btn_left);
             // 
             // SidePanel
             // 
@@ -452,8 +573,8 @@ namespace SchoolProject
             // 
             this.ExpStudentDataPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(171)))), ((int)(((byte)(109)))));
             this.ExpStudentDataPanel.Controls.Add(this.SideSearchDataPanel);
-            this.ExpStudentDataPanel.Controls.Add(this.SideDeleteDataPanel);
-            this.ExpStudentDataPanel.Controls.Add(this.SideUpdateDataPanel);
+            this.ExpStudentDataPanel.Controls.Add(this.SideStudentDeleteData);
+            this.ExpStudentDataPanel.Controls.Add(this.SideStudentUpdateData);
             this.ExpStudentDataPanel.Controls.Add(this.SideStudentInsertData);
             this.ExpStudentDataPanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.ExpStudentDataPanel.Location = new System.Drawing.Point(0, 270);
@@ -501,18 +622,31 @@ namespace SchoolProject
             this.panel21.MouseEnter += new System.EventHandler(this.ExpPanel_Mouse_Enter);
             this.panel21.MouseLeave += new System.EventHandler(this.ExpPanel_Mouse_Leave);
             // 
-            // SideDeleteDataPanel
+            // pictureBox18
             // 
-            this.SideDeleteDataPanel.Controls.Add(this.label29);
-            this.SideDeleteDataPanel.Controls.Add(this.panel19);
-            this.SideDeleteDataPanel.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.SideDeleteDataPanel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.SideDeleteDataPanel.Location = new System.Drawing.Point(0, 90);
-            this.SideDeleteDataPanel.Name = "SideDeleteDataPanel";
-            this.SideDeleteDataPanel.Size = new System.Drawing.Size(275, 45);
-            this.SideDeleteDataPanel.TabIndex = 6;
-            this.SideDeleteDataPanel.MouseEnter += new System.EventHandler(this.ExpPanel_Mouse_Enter);
-            this.SideDeleteDataPanel.MouseLeave += new System.EventHandler(this.ExpPanel_Mouse_Leave);
+            this.pictureBox18.Image = global::SchoolProject.Properties.Resources.analysis;
+            this.pictureBox18.Location = new System.Drawing.Point(12, 6);
+            this.pictureBox18.Name = "pictureBox18";
+            this.pictureBox18.Size = new System.Drawing.Size(28, 26);
+            this.pictureBox18.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox18.TabIndex = 1;
+            this.pictureBox18.TabStop = false;
+            this.pictureBox18.MouseEnter += new System.EventHandler(this.ExpPanel_Mouse_Enter);
+            this.pictureBox18.MouseLeave += new System.EventHandler(this.ExpPanel_Mouse_Leave);
+            // 
+            // SideStudentDeleteData
+            // 
+            this.SideStudentDeleteData.Controls.Add(this.label29);
+            this.SideStudentDeleteData.Controls.Add(this.panel19);
+            this.SideStudentDeleteData.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.SideStudentDeleteData.Dock = System.Windows.Forms.DockStyle.Top;
+            this.SideStudentDeleteData.Location = new System.Drawing.Point(0, 90);
+            this.SideStudentDeleteData.Name = "SideStudentDeleteData";
+            this.SideStudentDeleteData.Size = new System.Drawing.Size(275, 45);
+            this.SideStudentDeleteData.TabIndex = 6;
+            this.SideStudentDeleteData.Click += new System.EventHandler(this.SidePanel_Click);
+            this.SideStudentDeleteData.MouseEnter += new System.EventHandler(this.ExpPanel_Mouse_Enter);
+            this.SideStudentDeleteData.MouseLeave += new System.EventHandler(this.ExpPanel_Mouse_Leave);
             // 
             // label29
             // 
@@ -525,6 +659,7 @@ namespace SchoolProject
             this.label29.TabIndex = 3;
             this.label29.Text = "Delete Data";
             this.label29.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label29.Click += new System.EventHandler(this.SidePanel_Click);
             this.label29.MouseEnter += new System.EventHandler(this.ExpPanel_Mouse_Enter);
             this.label29.MouseLeave += new System.EventHandler(this.ExpPanel_Mouse_Leave);
             // 
@@ -536,22 +671,37 @@ namespace SchoolProject
             this.panel19.Name = "panel19";
             this.panel19.Size = new System.Drawing.Size(69, 45);
             this.panel19.TabIndex = 1;
+            this.panel19.Click += new System.EventHandler(this.SidePanel_Click);
             this.panel19.Paint += new System.Windows.Forms.PaintEventHandler(this.title_btn_picture_set);
             this.panel19.MouseEnter += new System.EventHandler(this.ExpPanel_Mouse_Enter);
             this.panel19.MouseLeave += new System.EventHandler(this.ExpPanel_Mouse_Leave);
             // 
-            // SideUpdateDataPanel
+            // pictureBox17
             // 
-            this.SideUpdateDataPanel.Controls.Add(this.label28);
-            this.SideUpdateDataPanel.Controls.Add(this.panel17);
-            this.SideUpdateDataPanel.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.SideUpdateDataPanel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.SideUpdateDataPanel.Location = new System.Drawing.Point(0, 45);
-            this.SideUpdateDataPanel.Name = "SideUpdateDataPanel";
-            this.SideUpdateDataPanel.Size = new System.Drawing.Size(275, 45);
-            this.SideUpdateDataPanel.TabIndex = 5;
-            this.SideUpdateDataPanel.MouseEnter += new System.EventHandler(this.ExpPanel_Mouse_Enter);
-            this.SideUpdateDataPanel.MouseLeave += new System.EventHandler(this.ExpPanel_Mouse_Leave);
+            this.pictureBox17.Image = global::SchoolProject.Properties.Resources.delete;
+            this.pictureBox17.Location = new System.Drawing.Point(12, 6);
+            this.pictureBox17.Name = "pictureBox17";
+            this.pictureBox17.Size = new System.Drawing.Size(28, 26);
+            this.pictureBox17.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox17.TabIndex = 1;
+            this.pictureBox17.TabStop = false;
+            this.pictureBox17.Click += new System.EventHandler(this.SidePanel_Click);
+            this.pictureBox17.MouseEnter += new System.EventHandler(this.ExpPanel_Mouse_Enter);
+            this.pictureBox17.MouseLeave += new System.EventHandler(this.ExpPanel_Mouse_Leave);
+            // 
+            // SideStudentUpdateData
+            // 
+            this.SideStudentUpdateData.Controls.Add(this.label28);
+            this.SideStudentUpdateData.Controls.Add(this.panel17);
+            this.SideStudentUpdateData.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.SideStudentUpdateData.Dock = System.Windows.Forms.DockStyle.Top;
+            this.SideStudentUpdateData.Location = new System.Drawing.Point(0, 45);
+            this.SideStudentUpdateData.Name = "SideStudentUpdateData";
+            this.SideStudentUpdateData.Size = new System.Drawing.Size(275, 45);
+            this.SideStudentUpdateData.TabIndex = 5;
+            this.SideStudentUpdateData.Click += new System.EventHandler(this.SidePanel_Click);
+            this.SideStudentUpdateData.MouseEnter += new System.EventHandler(this.ExpPanel_Mouse_Enter);
+            this.SideStudentUpdateData.MouseLeave += new System.EventHandler(this.ExpPanel_Mouse_Leave);
             // 
             // label28
             // 
@@ -564,6 +714,7 @@ namespace SchoolProject
             this.label28.TabIndex = 3;
             this.label28.Text = "Update Data";
             this.label28.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label28.Click += new System.EventHandler(this.SidePanel_Click);
             this.label28.MouseEnter += new System.EventHandler(this.ExpPanel_Mouse_Enter);
             this.label28.MouseLeave += new System.EventHandler(this.ExpPanel_Mouse_Leave);
             // 
@@ -575,9 +726,23 @@ namespace SchoolProject
             this.panel17.Name = "panel17";
             this.panel17.Size = new System.Drawing.Size(69, 45);
             this.panel17.TabIndex = 1;
+            this.panel17.Click += new System.EventHandler(this.SidePanel_Click);
             this.panel17.Paint += new System.Windows.Forms.PaintEventHandler(this.title_btn_picture_set);
             this.panel17.MouseEnter += new System.EventHandler(this.ExpPanel_Mouse_Enter);
             this.panel17.MouseLeave += new System.EventHandler(this.ExpPanel_Mouse_Leave);
+            // 
+            // pictureBox16
+            // 
+            this.pictureBox16.Image = global::SchoolProject.Properties.Resources.real_time;
+            this.pictureBox16.Location = new System.Drawing.Point(10, 6);
+            this.pictureBox16.Name = "pictureBox16";
+            this.pictureBox16.Size = new System.Drawing.Size(28, 26);
+            this.pictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox16.TabIndex = 1;
+            this.pictureBox16.TabStop = false;
+            this.pictureBox16.Click += new System.EventHandler(this.SidePanel_Click);
+            this.pictureBox16.MouseEnter += new System.EventHandler(this.ExpPanel_Mouse_Enter);
+            this.pictureBox16.MouseLeave += new System.EventHandler(this.ExpPanel_Mouse_Leave);
             // 
             // SideStudentInsertData
             // 
@@ -619,6 +784,18 @@ namespace SchoolProject
             this.panel15.Paint += new System.Windows.Forms.PaintEventHandler(this.title_btn_picture_set);
             this.panel15.MouseEnter += new System.EventHandler(this.ExpPanel_Mouse_Enter);
             this.panel15.MouseLeave += new System.EventHandler(this.ExpPanel_Mouse_Leave);
+            // 
+            // pictureBox15
+            // 
+            this.pictureBox15.Image = global::SchoolProject.Properties.Resources.above;
+            this.pictureBox15.Location = new System.Drawing.Point(10, 3);
+            this.pictureBox15.Name = "pictureBox15";
+            this.pictureBox15.Size = new System.Drawing.Size(28, 26);
+            this.pictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox15.TabIndex = 1;
+            this.pictureBox15.TabStop = false;
+            this.pictureBox15.MouseEnter += new System.EventHandler(this.ExpPanel_Mouse_Enter);
+            this.pictureBox15.MouseLeave += new System.EventHandler(this.ExpPanel_Mouse_Leave);
             // 
             // SideBusDataPanel
             // 
@@ -663,6 +840,19 @@ namespace SchoolProject
             this.panel13.MouseEnter += new System.EventHandler(this.SidePanel_Hover_Enter);
             this.panel13.MouseLeave += new System.EventHandler(this.SidePanel_Hover_Left);
             // 
+            // pictureBox14
+            // 
+            this.pictureBox14.Image = global::SchoolProject.Properties.Resources.bus;
+            this.pictureBox14.Location = new System.Drawing.Point(10, 9);
+            this.pictureBox14.Name = "pictureBox14";
+            this.pictureBox14.Size = new System.Drawing.Size(28, 26);
+            this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox14.TabIndex = 1;
+            this.pictureBox14.TabStop = false;
+            this.pictureBox14.DoubleClick += new System.EventHandler(this.SidePanel_DoubleClick);
+            this.pictureBox14.MouseEnter += new System.EventHandler(this.SidePanel_Hover_Enter);
+            this.pictureBox14.MouseLeave += new System.EventHandler(this.SidePanel_Hover_Left);
+            // 
             // SideLibraryDataPanel
             // 
             this.SideLibraryDataPanel.Controls.Add(this.label24);
@@ -705,6 +895,19 @@ namespace SchoolProject
             this.panel12.DoubleClick += new System.EventHandler(this.SidePanel_DoubleClick);
             this.panel12.MouseEnter += new System.EventHandler(this.SidePanel_Hover_Enter);
             this.panel12.MouseLeave += new System.EventHandler(this.SidePanel_Hover_Left);
+            // 
+            // pictureBox13
+            // 
+            this.pictureBox13.Image = global::SchoolProject.Properties.Resources.book;
+            this.pictureBox13.Location = new System.Drawing.Point(10, 9);
+            this.pictureBox13.Name = "pictureBox13";
+            this.pictureBox13.Size = new System.Drawing.Size(28, 26);
+            this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox13.TabIndex = 1;
+            this.pictureBox13.TabStop = false;
+            this.pictureBox13.DoubleClick += new System.EventHandler(this.SidePanel_DoubleClick);
+            this.pictureBox13.MouseEnter += new System.EventHandler(this.SidePanel_Hover_Enter);
+            this.pictureBox13.MouseLeave += new System.EventHandler(this.SidePanel_Hover_Left);
             // 
             // SideStudentDataPanel
             // 
@@ -752,6 +955,20 @@ namespace SchoolProject
             this.panel11.MouseEnter += new System.EventHandler(this.SidePanel_Hover_Enter);
             this.panel11.MouseLeave += new System.EventHandler(this.SidePanel_Hover_Left);
             // 
+            // pictureBox12
+            // 
+            this.pictureBox12.Image = global::SchoolProject.Properties.Resources.reading_book;
+            this.pictureBox12.Location = new System.Drawing.Point(5, 6);
+            this.pictureBox12.Name = "pictureBox12";
+            this.pictureBox12.Size = new System.Drawing.Size(28, 26);
+            this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox12.TabIndex = 1;
+            this.pictureBox12.TabStop = false;
+            this.pictureBox12.Click += new System.EventHandler(this.SidePanel_Click);
+            this.pictureBox12.DoubleClick += new System.EventHandler(this.StudentSidePanel_Expand_DoubleClick);
+            this.pictureBox12.MouseEnter += new System.EventHandler(this.SidePanel_Hover_Enter);
+            this.pictureBox12.MouseLeave += new System.EventHandler(this.SidePanel_Hover_Left);
+            // 
             // SideDashboardPanel
             // 
             this.SideDashboardPanel.Controls.Add(this.label22);
@@ -798,6 +1015,20 @@ namespace SchoolProject
             this.panel10.MouseEnter += new System.EventHandler(this.SidePanel_Hover_Enter);
             this.panel10.MouseLeave += new System.EventHandler(this.SidePanel_Hover_Left);
             // 
+            // pictureBox11
+            // 
+            this.pictureBox11.Image = global::SchoolProject.Properties.Resources.dashboard;
+            this.pictureBox11.Location = new System.Drawing.Point(10, 6);
+            this.pictureBox11.Name = "pictureBox11";
+            this.pictureBox11.Size = new System.Drawing.Size(28, 26);
+            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox11.TabIndex = 1;
+            this.pictureBox11.TabStop = false;
+            this.pictureBox11.Click += new System.EventHandler(this.SidePanel_Click);
+            this.pictureBox11.DoubleClick += new System.EventHandler(this.SidePanel_DoubleClick);
+            this.pictureBox11.MouseEnter += new System.EventHandler(this.SidePanel_Hover_Enter);
+            this.pictureBox11.MouseLeave += new System.EventHandler(this.SidePanel_Hover_Left);
+            // 
             // SideRegistrationPanel
             // 
             this.SideRegistrationPanel.Controls.Add(this.label9);
@@ -842,6 +1073,20 @@ namespace SchoolProject
             this.panel9.DoubleClick += new System.EventHandler(this.SidePanel_DoubleClick);
             this.panel9.MouseEnter += new System.EventHandler(this.SidePanel_Hover_Enter);
             this.panel9.MouseLeave += new System.EventHandler(this.SidePanel_Hover_Left);
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.Image = global::SchoolProject.Properties.Resources.edit;
+            this.pictureBox7.Location = new System.Drawing.Point(5, 14);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(28, 26);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox7.TabIndex = 1;
+            this.pictureBox7.TabStop = false;
+            this.pictureBox7.Click += new System.EventHandler(this.SidePanel_Click);
+            this.pictureBox7.DoubleClick += new System.EventHandler(this.SidePanel_DoubleClick);
+            this.pictureBox7.MouseEnter += new System.EventHandler(this.SidePanel_Hover_Enter);
+            this.pictureBox7.MouseLeave += new System.EventHandler(this.SidePanel_Hover_Left);
             // 
             // SideLoginPanel
             // 
@@ -888,8 +1133,24 @@ namespace SchoolProject
             this.panel8.MouseEnter += new System.EventHandler(this.SidePanel_Hover_Enter);
             this.panel8.MouseLeave += new System.EventHandler(this.SidePanel_Hover_Left);
             // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Image = global::SchoolProject.Properties.Resources.login;
+            this.pictureBox6.Location = new System.Drawing.Point(5, 9);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(28, 26);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox6.TabIndex = 1;
+            this.pictureBox6.TabStop = false;
+            this.pictureBox6.Click += new System.EventHandler(this.SidePanel_Click);
+            this.pictureBox6.DoubleClick += new System.EventHandler(this.SidePanel_DoubleClick);
+            this.pictureBox6.MouseEnter += new System.EventHandler(this.SidePanel_Hover_Enter);
+            this.pictureBox6.MouseLeave += new System.EventHandler(this.SidePanel_Hover_Left);
+            // 
             // panel4
             // 
+            this.panel4.Controls.Add(this.StudentDeleteData);
+            this.panel4.Controls.Add(this.StudentUpdateData);
             this.panel4.Controls.Add(this.StudentInsertData);
             this.panel4.Controls.Add(this.StudentDataPanel);
             this.panel4.Controls.Add(this.DashboardPanel);
@@ -902,6 +1163,922 @@ namespace SchoolProject
             this.panel4.Size = new System.Drawing.Size(1180, 800);
             this.panel4.TabIndex = 3;
             // 
+            // StudentUpdateData
+            // 
+            this.StudentUpdateData.Controls.Add(this.SuggestionPanel);
+            this.StudentUpdateData.Controls.Add(this.UpdatePageButton);
+            this.StudentUpdateData.Controls.Add(this.label43);
+            this.StudentUpdateData.Controls.Add(this.comboBox3);
+            this.StudentUpdateData.Controls.Add(this.label44);
+            this.StudentUpdateData.Controls.Add(this.panel33);
+            this.StudentUpdateData.Controls.Add(this.label45);
+            this.StudentUpdateData.Controls.Add(this.panel34);
+            this.StudentUpdateData.Controls.Add(this.label46);
+            this.StudentUpdateData.Controls.Add(this.panel35);
+            this.StudentUpdateData.Controls.Add(this.label47);
+            this.StudentUpdateData.Controls.Add(this.panel36);
+            this.StudentUpdateData.Controls.Add(this.label48);
+            this.StudentUpdateData.Controls.Add(this.panel37);
+            this.StudentUpdateData.Controls.Add(this.label49);
+            this.StudentUpdateData.Controls.Add(this.panel38);
+            this.StudentUpdateData.Controls.Add(this.label50);
+            this.StudentUpdateData.Controls.Add(this.label51);
+            this.StudentUpdateData.Controls.Add(this.comboBox4);
+            this.StudentUpdateData.Controls.Add(this.panel39);
+            this.StudentUpdateData.Controls.Add(this.label52);
+            this.StudentUpdateData.Controls.Add(this.pictureBox23);
+            this.StudentUpdateData.Controls.Add(this.label53);
+            this.StudentUpdateData.Location = new System.Drawing.Point(899, 298);
+            this.StudentUpdateData.Name = "StudentUpdateData";
+            this.StudentUpdateData.Size = new System.Drawing.Size(1171, 784);
+            this.StudentUpdateData.TabIndex = 5;
+            this.StudentUpdateData.SizeChanged += new System.EventHandler(this.StudentUpdateData_SizeChanged);
+            // 
+            // SuggestionPanel
+            // 
+            this.SuggestionPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(249)))), ((int)(((byte)(245)))));
+            this.SuggestionPanel.Controls.Add(this.panel40);
+            this.SuggestionPanel.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.SuggestionPanel.Location = new System.Drawing.Point(94, 115);
+            this.SuggestionPanel.Name = "SuggestionPanel";
+            this.SuggestionPanel.Size = new System.Drawing.Size(353, 0);
+            this.SuggestionPanel.TabIndex = 74;
+            // 
+            // panel40
+            // 
+            this.panel40.Controls.Add(this.label54);
+            this.panel40.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel40.Location = new System.Drawing.Point(0, 0);
+            this.panel40.Name = "panel40";
+            this.panel40.Size = new System.Drawing.Size(353, 37);
+            this.panel40.TabIndex = 0;
+            // 
+            // label54
+            // 
+            this.label54.Dock = System.Windows.Forms.DockStyle.Left;
+            this.label54.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label54.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(69)))), ((int)(((byte)(2)))));
+            this.label54.Location = new System.Drawing.Point(0, 0);
+            this.label54.Name = "label54";
+            this.label54.Size = new System.Drawing.Size(87, 37);
+            this.label54.TabIndex = 65;
+            this.label54.Text = "Student_ID";
+            this.label54.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // UpdatePageButton
+            // 
+            this.UpdatePageButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(28)))), ((int)(((byte)(9)))));
+            this.UpdatePageButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.UpdatePageButton.FlatAppearance.BorderSize = 0;
+            this.UpdatePageButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.UpdatePageButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UpdatePageButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(171)))), ((int)(((byte)(109)))));
+            this.UpdatePageButton.Location = new System.Drawing.Point(860, 679);
+            this.UpdatePageButton.Name = "UpdatePageButton";
+            this.UpdatePageButton.Size = new System.Drawing.Size(164, 29);
+            this.UpdatePageButton.TabIndex = 73;
+            this.UpdatePageButton.Text = "Update";
+            this.UpdatePageButton.UseVisualStyleBackColor = false;
+            // 
+            // label43
+            // 
+            this.label43.AutoSize = true;
+            this.label43.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label43.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(69)))), ((int)(((byte)(2)))));
+            this.label43.Location = new System.Drawing.Point(762, 508);
+            this.label43.Name = "label43";
+            this.label43.Size = new System.Drawing.Size(60, 16);
+            this.label43.TabIndex = 72;
+            this.label43.Text = "Section";
+            this.label43.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // comboBox3
+            // 
+            this.comboBox3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.comboBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox3.FormattingEnabled = true;
+            this.comboBox3.Location = new System.Drawing.Point(759, 527);
+            this.comboBox3.Name = "comboBox3";
+            this.comboBox3.Size = new System.Drawing.Size(317, 32);
+            this.comboBox3.TabIndex = 71;
+            // 
+            // label44
+            // 
+            this.label44.AutoSize = true;
+            this.label44.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label44.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(69)))), ((int)(((byte)(2)))));
+            this.label44.Location = new System.Drawing.Point(841, 231);
+            this.label44.Name = "label44";
+            this.label44.Size = new System.Drawing.Size(100, 16);
+            this.label44.TabIndex = 70;
+            this.label44.Text = "Given Picture";
+            this.label44.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // panel33
+            // 
+            this.panel33.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(249)))), ((int)(((byte)(245)))));
+            this.panel33.Controls.Add(this.textBox8);
+            this.panel33.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.panel33.Location = new System.Drawing.Point(94, 635);
+            this.panel33.Name = "panel33";
+            this.panel33.Size = new System.Drawing.Size(621, 141);
+            this.panel33.TabIndex = 69;
+            // 
+            // textBox8
+            // 
+            this.textBox8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(249)))), ((int)(((byte)(245)))));
+            this.textBox8.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(171)))), ((int)(((byte)(109)))));
+            this.textBox8.Location = new System.Drawing.Point(9, 8);
+            this.textBox8.Multiline = true;
+            this.textBox8.Name = "textBox8";
+            this.textBox8.Size = new System.Drawing.Size(1061, 124);
+            this.textBox8.TabIndex = 1;
+            // 
+            // label45
+            // 
+            this.label45.AutoSize = true;
+            this.label45.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label45.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(69)))), ((int)(((byte)(2)))));
+            this.label45.Location = new System.Drawing.Point(91, 616);
+            this.label45.Name = "label45";
+            this.label45.Size = new System.Drawing.Size(66, 16);
+            this.label45.TabIndex = 68;
+            this.label45.Text = "Address";
+            this.label45.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // panel34
+            // 
+            this.panel34.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(249)))), ((int)(((byte)(245)))));
+            this.panel34.Controls.Add(this.textBox9);
+            this.panel34.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.panel34.Location = new System.Drawing.Point(94, 501);
+            this.panel34.Name = "panel34";
+            this.panel34.Size = new System.Drawing.Size(353, 32);
+            this.panel34.TabIndex = 67;
+            // 
+            // textBox9
+            // 
+            this.textBox9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(249)))), ((int)(((byte)(245)))));
+            this.textBox9.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(171)))), ((int)(((byte)(109)))));
+            this.textBox9.Location = new System.Drawing.Point(9, 8);
+            this.textBox9.MaxLength = 10;
+            this.textBox9.Name = "textBox9";
+            this.textBox9.Size = new System.Drawing.Size(330, 15);
+            this.textBox9.TabIndex = 1;
+            // 
+            // label46
+            // 
+            this.label46.AutoSize = true;
+            this.label46.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label46.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(69)))), ((int)(((byte)(2)))));
+            this.label46.Location = new System.Drawing.Point(91, 482);
+            this.label46.Name = "label46";
+            this.label46.Size = new System.Drawing.Size(127, 16);
+            this.label46.TabIndex = 66;
+            this.label46.Text = "Phone Number: - ";
+            this.label46.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // panel35
+            // 
+            this.panel35.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(249)))), ((int)(((byte)(245)))));
+            this.panel35.Controls.Add(this.textBox10);
+            this.panel35.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.panel35.Location = new System.Drawing.Point(94, 84);
+            this.panel35.Name = "panel35";
+            this.panel35.Size = new System.Drawing.Size(353, 32);
+            this.panel35.TabIndex = 65;
+            // 
+            // textBox10
+            // 
+            this.textBox10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(249)))), ((int)(((byte)(245)))));
+            this.textBox10.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(171)))), ((int)(((byte)(109)))));
+            this.textBox10.Location = new System.Drawing.Point(9, 8);
+            this.textBox10.Name = "textBox10";
+            this.textBox10.Size = new System.Drawing.Size(330, 15);
+            this.textBox10.TabIndex = 1;
+            this.textBox10.KeyUp += new System.Windows.Forms.KeyEventHandler(this.textBox10_KeyUp);
+            // 
+            // label47
+            // 
+            this.label47.AutoSize = true;
+            this.label47.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label47.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(69)))), ((int)(((byte)(2)))));
+            this.label47.Location = new System.Drawing.Point(91, 65);
+            this.label47.Name = "label47";
+            this.label47.Size = new System.Drawing.Size(83, 16);
+            this.label47.TabIndex = 64;
+            this.label47.Text = "Student_ID";
+            this.label47.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // panel36
+            // 
+            this.panel36.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(249)))), ((int)(((byte)(245)))));
+            this.panel36.Controls.Add(this.textBox11);
+            this.panel36.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.panel36.Location = new System.Drawing.Point(94, 182);
+            this.panel36.Name = "panel36";
+            this.panel36.Size = new System.Drawing.Size(353, 32);
+            this.panel36.TabIndex = 63;
+            // 
+            // textBox11
+            // 
+            this.textBox11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(249)))), ((int)(((byte)(245)))));
+            this.textBox11.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(171)))), ((int)(((byte)(109)))));
+            this.textBox11.Location = new System.Drawing.Point(9, 8);
+            this.textBox11.Name = "textBox11";
+            this.textBox11.Size = new System.Drawing.Size(330, 15);
+            this.textBox11.TabIndex = 1;
+            // 
+            // label48
+            // 
+            this.label48.AutoSize = true;
+            this.label48.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.label48.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label48.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(69)))), ((int)(((byte)(2)))));
+            this.label48.Location = new System.Drawing.Point(91, 163);
+            this.label48.Name = "label48";
+            this.label48.Size = new System.Drawing.Size(66, 16);
+            this.label48.TabIndex = 62;
+            this.label48.Text = "Name: - ";
+            this.label48.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // panel37
+            // 
+            this.panel37.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(249)))), ((int)(((byte)(245)))));
+            this.panel37.Controls.Add(this.textBox12);
+            this.panel37.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.panel37.Location = new System.Drawing.Point(94, 278);
+            this.panel37.Name = "panel37";
+            this.panel37.Size = new System.Drawing.Size(353, 32);
+            this.panel37.TabIndex = 61;
+            // 
+            // textBox12
+            // 
+            this.textBox12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(249)))), ((int)(((byte)(245)))));
+            this.textBox12.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(171)))), ((int)(((byte)(109)))));
+            this.textBox12.Location = new System.Drawing.Point(9, 8);
+            this.textBox12.Name = "textBox12";
+            this.textBox12.Size = new System.Drawing.Size(330, 15);
+            this.textBox12.TabIndex = 1;
+            // 
+            // label49
+            // 
+            this.label49.AutoSize = true;
+            this.label49.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label49.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(69)))), ((int)(((byte)(2)))));
+            this.label49.Location = new System.Drawing.Point(91, 259);
+            this.label49.Name = "label49";
+            this.label49.Size = new System.Drawing.Size(122, 16);
+            this.label49.TabIndex = 60;
+            this.label49.Text = "Father\'s Name: -";
+            this.label49.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // panel38
+            // 
+            this.panel38.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(249)))), ((int)(((byte)(245)))));
+            this.panel38.Controls.Add(this.textBox13);
+            this.panel38.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.panel38.Location = new System.Drawing.Point(759, 342);
+            this.panel38.Name = "panel38";
+            this.panel38.Size = new System.Drawing.Size(321, 32);
+            this.panel38.TabIndex = 59;
+            // 
+            // textBox13
+            // 
+            this.textBox13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(249)))), ((int)(((byte)(245)))));
+            this.textBox13.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(171)))), ((int)(((byte)(109)))));
+            this.textBox13.Location = new System.Drawing.Point(9, 8);
+            this.textBox13.Name = "textBox13";
+            this.textBox13.Size = new System.Drawing.Size(292, 15);
+            this.textBox13.TabIndex = 1;
+            // 
+            // label50
+            // 
+            this.label50.AutoSize = true;
+            this.label50.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label50.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(69)))), ((int)(((byte)(2)))));
+            this.label50.Location = new System.Drawing.Point(756, 323);
+            this.label50.Name = "label50";
+            this.label50.Size = new System.Drawing.Size(111, 16);
+            this.label50.TabIndex = 58;
+            this.label50.Text = "Roll Number: - ";
+            this.label50.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label51
+            // 
+            this.label51.AutoSize = true;
+            this.label51.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label51.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(69)))), ((int)(((byte)(2)))));
+            this.label51.Location = new System.Drawing.Point(760, 414);
+            this.label51.Name = "label51";
+            this.label51.Size = new System.Drawing.Size(47, 16);
+            this.label51.TabIndex = 57;
+            this.label51.Text = "Class";
+            this.label51.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // comboBox4
+            // 
+            this.comboBox4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.comboBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox4.FormattingEnabled = true;
+            this.comboBox4.Items.AddRange(new object[] {
+            "CCA",
+            "CCPA",
+            "CACPA",
+            "CSE"});
+            this.comboBox4.Location = new System.Drawing.Point(759, 433);
+            this.comboBox4.Name = "comboBox4";
+            this.comboBox4.Size = new System.Drawing.Size(317, 32);
+            this.comboBox4.TabIndex = 56;
+            this.comboBox4.SelectedIndexChanged += new System.EventHandler(this.comboBox4_SelectedIndexChanged);
+            // 
+            // panel39
+            // 
+            this.panel39.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(249)))), ((int)(((byte)(245)))));
+            this.panel39.Controls.Add(this.textBox14);
+            this.panel39.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.panel39.Location = new System.Drawing.Point(94, 375);
+            this.panel39.Name = "panel39";
+            this.panel39.Size = new System.Drawing.Size(353, 32);
+            this.panel39.TabIndex = 55;
+            // 
+            // textBox14
+            // 
+            this.textBox14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(249)))), ((int)(((byte)(245)))));
+            this.textBox14.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(171)))), ((int)(((byte)(109)))));
+            this.textBox14.Location = new System.Drawing.Point(9, 8);
+            this.textBox14.Name = "textBox14";
+            this.textBox14.Size = new System.Drawing.Size(330, 15);
+            this.textBox14.TabIndex = 1;
+            // 
+            // label52
+            // 
+            this.label52.AutoSize = true;
+            this.label52.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label52.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(69)))), ((int)(((byte)(2)))));
+            this.label52.Location = new System.Drawing.Point(91, 356);
+            this.label52.Name = "label52";
+            this.label52.Size = new System.Drawing.Size(73, 16);
+            this.label52.TabIndex = 54;
+            this.label52.Text = "Voter - ID";
+            this.label52.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // pictureBox23
+            // 
+            this.pictureBox23.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox23.Location = new System.Drawing.Point(859, 60);
+            this.pictureBox23.Name = "pictureBox23";
+            this.pictureBox23.Size = new System.Drawing.Size(165, 155);
+            this.pictureBox23.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox23.TabIndex = 53;
+            this.pictureBox23.TabStop = false;
+            // 
+            // label53
+            // 
+            this.label53.AutoSize = true;
+            this.label53.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label53.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(69)))), ((int)(((byte)(2)))));
+            this.label53.Location = new System.Drawing.Point(551, 6);
+            this.label53.Name = "label53";
+            this.label53.Size = new System.Drawing.Size(178, 31);
+            this.label53.TabIndex = 52;
+            this.label53.Text = "Update Data";
+            this.label53.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // StudentInsertData
+            // 
+            this.StudentInsertData.Controls.Add(this.InsertPageNewRecordButton);
+            this.StudentInsertData.Controls.Add(this.label42);
+            this.StudentInsertData.Controls.Add(this.comboBox2);
+            this.StudentInsertData.Controls.Add(this.label41);
+            this.StudentInsertData.Controls.Add(this.panel31);
+            this.StudentInsertData.Controls.Add(this.label38);
+            this.StudentInsertData.Controls.Add(this.panel30);
+            this.StudentInsertData.Controls.Add(this.label37);
+            this.StudentInsertData.Controls.Add(this.panel27);
+            this.StudentInsertData.Controls.Add(this.label33);
+            this.StudentInsertData.Controls.Add(this.panel28);
+            this.StudentInsertData.Controls.Add(this.label34);
+            this.StudentInsertData.Controls.Add(this.panel26);
+            this.StudentInsertData.Controls.Add(this.label35);
+            this.StudentInsertData.Controls.Add(this.panel32);
+            this.StudentInsertData.Controls.Add(this.label39);
+            this.StudentInsertData.Controls.Add(this.label40);
+            this.StudentInsertData.Controls.Add(this.comboBox1);
+            this.StudentInsertData.Controls.Add(this.panel29);
+            this.StudentInsertData.Controls.Add(this.label36);
+            this.StudentInsertData.Controls.Add(this.pictureBox22);
+            this.StudentInsertData.Controls.Add(this.label32);
+            this.StudentInsertData.Location = new System.Drawing.Point(1032, 16);
+            this.StudentInsertData.Name = "StudentInsertData";
+            this.StudentInsertData.Size = new System.Drawing.Size(1168, 794);
+            this.StudentInsertData.TabIndex = 4;
+            this.StudentInsertData.SizeChanged += new System.EventHandler(this.StudentInsertData_SizeChanged);
+            // 
+            // InsertPageNewRecordButton
+            // 
+            this.InsertPageNewRecordButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(28)))), ((int)(((byte)(9)))));
+            this.InsertPageNewRecordButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.InsertPageNewRecordButton.FlatAppearance.BorderSize = 0;
+            this.InsertPageNewRecordButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.InsertPageNewRecordButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.InsertPageNewRecordButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(171)))), ((int)(((byte)(109)))));
+            this.InsertPageNewRecordButton.Location = new System.Drawing.Point(809, 673);
+            this.InsertPageNewRecordButton.Name = "InsertPageNewRecordButton";
+            this.InsertPageNewRecordButton.Size = new System.Drawing.Size(164, 29);
+            this.InsertPageNewRecordButton.TabIndex = 51;
+            this.InsertPageNewRecordButton.Text = "Insert";
+            this.InsertPageNewRecordButton.UseVisualStyleBackColor = false;
+            this.InsertPageNewRecordButton.Click += new System.EventHandler(this.InsertPageNewRecordButton_Click);
+            // 
+            // label42
+            // 
+            this.label42.AutoSize = true;
+            this.label42.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label42.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(69)))), ((int)(((byte)(2)))));
+            this.label42.Location = new System.Drawing.Point(711, 502);
+            this.label42.Name = "label42";
+            this.label42.Size = new System.Drawing.Size(60, 16);
+            this.label42.TabIndex = 50;
+            this.label42.Text = "Section";
+            this.label42.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.comboBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Location = new System.Drawing.Point(708, 521);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(317, 32);
+            this.comboBox2.TabIndex = 49;
+            this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
+            // 
+            // label41
+            // 
+            this.label41.AutoSize = true;
+            this.label41.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label41.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(69)))), ((int)(((byte)(2)))));
+            this.label41.Location = new System.Drawing.Point(791, 251);
+            this.label41.Name = "label41";
+            this.label41.Size = new System.Drawing.Size(203, 16);
+            this.label41.TabIndex = 48;
+            this.label41.Text = "Please Attach a picture here";
+            this.label41.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // panel31
+            // 
+            this.panel31.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(249)))), ((int)(((byte)(245)))));
+            this.panel31.Controls.Add(this.textBox6);
+            this.panel31.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.panel31.Location = new System.Drawing.Point(43, 629);
+            this.panel31.Name = "panel31";
+            this.panel31.Size = new System.Drawing.Size(621, 141);
+            this.panel31.TabIndex = 47;
+            // 
+            // textBox6
+            // 
+            this.textBox6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(249)))), ((int)(((byte)(245)))));
+            this.textBox6.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(171)))), ((int)(((byte)(109)))));
+            this.textBox6.Location = new System.Drawing.Point(9, 8);
+            this.textBox6.Multiline = true;
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(1061, 124);
+            this.textBox6.TabIndex = 1;
+            // 
+            // label38
+            // 
+            this.label38.AutoSize = true;
+            this.label38.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label38.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(69)))), ((int)(((byte)(2)))));
+            this.label38.Location = new System.Drawing.Point(40, 610);
+            this.label38.Name = "label38";
+            this.label38.Size = new System.Drawing.Size(66, 16);
+            this.label38.TabIndex = 46;
+            this.label38.Text = "Address";
+            this.label38.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // panel30
+            // 
+            this.panel30.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(249)))), ((int)(((byte)(245)))));
+            this.panel30.Controls.Add(this.textBox5);
+            this.panel30.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.panel30.Location = new System.Drawing.Point(43, 495);
+            this.panel30.Name = "panel30";
+            this.panel30.Size = new System.Drawing.Size(353, 32);
+            this.panel30.TabIndex = 45;
+            this.panel30.Click += new System.EventHandler(this.Text_Panel_Click);
+            // 
+            // textBox5
+            // 
+            this.textBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(249)))), ((int)(((byte)(245)))));
+            this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(171)))), ((int)(((byte)(109)))));
+            this.textBox5.Location = new System.Drawing.Point(9, 8);
+            this.textBox5.MaxLength = 10;
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(330, 15);
+            this.textBox5.TabIndex = 1;
+            this.textBox5.Click += new System.EventHandler(this.Text_Panel_Click);
+            this.textBox5.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Phone_Number);
+            // 
+            // label37
+            // 
+            this.label37.AutoSize = true;
+            this.label37.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label37.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(69)))), ((int)(((byte)(2)))));
+            this.label37.Location = new System.Drawing.Point(40, 476);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(127, 16);
+            this.label37.TabIndex = 44;
+            this.label37.Text = "Phone Number: - ";
+            this.label37.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // panel27
+            // 
+            this.panel27.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(249)))), ((int)(((byte)(245)))));
+            this.panel27.Controls.Add(this.textBox1);
+            this.panel27.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.panel27.Location = new System.Drawing.Point(43, 78);
+            this.panel27.Name = "panel27";
+            this.panel27.Size = new System.Drawing.Size(353, 32);
+            this.panel27.TabIndex = 43;
+            this.panel27.Click += new System.EventHandler(this.Text_Panel_Click);
+            // 
+            // textBox1
+            // 
+            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(249)))), ((int)(((byte)(245)))));
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(171)))), ((int)(((byte)(109)))));
+            this.textBox1.Location = new System.Drawing.Point(9, 8);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
+            this.textBox1.Size = new System.Drawing.Size(330, 15);
+            this.textBox1.TabIndex = 1;
+            this.textBox1.Click += new System.EventHandler(this.Text_Panel_Click);
+            // 
+            // label33
+            // 
+            this.label33.AutoSize = true;
+            this.label33.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label33.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(69)))), ((int)(((byte)(2)))));
+            this.label33.Location = new System.Drawing.Point(40, 59);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(83, 16);
+            this.label33.TabIndex = 42;
+            this.label33.Text = "Student_ID";
+            this.label33.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // panel28
+            // 
+            this.panel28.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(249)))), ((int)(((byte)(245)))));
+            this.panel28.Controls.Add(this.textBox2);
+            this.panel28.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.panel28.Location = new System.Drawing.Point(43, 176);
+            this.panel28.Name = "panel28";
+            this.panel28.Size = new System.Drawing.Size(353, 32);
+            this.panel28.TabIndex = 41;
+            this.panel28.Click += new System.EventHandler(this.Text_Panel_Click);
+            // 
+            // textBox2
+            // 
+            this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(249)))), ((int)(((byte)(245)))));
+            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(171)))), ((int)(((byte)(109)))));
+            this.textBox2.Location = new System.Drawing.Point(9, 8);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(330, 15);
+            this.textBox2.TabIndex = 1;
+            this.textBox2.Click += new System.EventHandler(this.Text_Panel_Click);
+            // 
+            // label34
+            // 
+            this.label34.AutoSize = true;
+            this.label34.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.label34.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label34.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(69)))), ((int)(((byte)(2)))));
+            this.label34.Location = new System.Drawing.Point(40, 157);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(66, 16);
+            this.label34.TabIndex = 40;
+            this.label34.Text = "Name: - ";
+            this.label34.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // panel26
+            // 
+            this.panel26.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(249)))), ((int)(((byte)(245)))));
+            this.panel26.Controls.Add(this.textBox3);
+            this.panel26.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.panel26.Location = new System.Drawing.Point(43, 272);
+            this.panel26.Name = "panel26";
+            this.panel26.Size = new System.Drawing.Size(353, 32);
+            this.panel26.TabIndex = 39;
+            this.panel26.Click += new System.EventHandler(this.Text_Panel_Click);
+            // 
+            // textBox3
+            // 
+            this.textBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(249)))), ((int)(((byte)(245)))));
+            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(171)))), ((int)(((byte)(109)))));
+            this.textBox3.Location = new System.Drawing.Point(9, 8);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(330, 15);
+            this.textBox3.TabIndex = 1;
+            this.textBox3.Click += new System.EventHandler(this.Text_Panel_Click);
+            // 
+            // label35
+            // 
+            this.label35.AutoSize = true;
+            this.label35.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label35.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(69)))), ((int)(((byte)(2)))));
+            this.label35.Location = new System.Drawing.Point(40, 253);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(122, 16);
+            this.label35.TabIndex = 38;
+            this.label35.Text = "Father\'s Name: -";
+            this.label35.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // panel32
+            // 
+            this.panel32.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(249)))), ((int)(((byte)(245)))));
+            this.panel32.Controls.Add(this.textBox7);
+            this.panel32.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.panel32.Location = new System.Drawing.Point(708, 336);
+            this.panel32.Name = "panel32";
+            this.panel32.Size = new System.Drawing.Size(321, 32);
+            this.panel32.TabIndex = 37;
+            this.panel32.Click += new System.EventHandler(this.Text_Panel_Click);
+            // 
+            // textBox7
+            // 
+            this.textBox7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(249)))), ((int)(((byte)(245)))));
+            this.textBox7.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(171)))), ((int)(((byte)(109)))));
+            this.textBox7.Location = new System.Drawing.Point(9, 8);
+            this.textBox7.Name = "textBox7";
+            this.textBox7.ReadOnly = true;
+            this.textBox7.Size = new System.Drawing.Size(292, 15);
+            this.textBox7.TabIndex = 1;
+            this.textBox7.Click += new System.EventHandler(this.Text_Panel_Click);
+            // 
+            // label39
+            // 
+            this.label39.AutoSize = true;
+            this.label39.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label39.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(69)))), ((int)(((byte)(2)))));
+            this.label39.Location = new System.Drawing.Point(705, 317);
+            this.label39.Name = "label39";
+            this.label39.Size = new System.Drawing.Size(111, 16);
+            this.label39.TabIndex = 36;
+            this.label39.Text = "Roll Number: - ";
+            this.label39.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label40
+            // 
+            this.label40.AutoSize = true;
+            this.label40.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label40.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(69)))), ((int)(((byte)(2)))));
+            this.label40.Location = new System.Drawing.Point(709, 408);
+            this.label40.Name = "label40";
+            this.label40.Size = new System.Drawing.Size(47, 16);
+            this.label40.TabIndex = 35;
+            this.label40.Text = "Class";
+            this.label40.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "CCA",
+            "CCPA",
+            "CACPA",
+            "CSE"});
+            this.comboBox1.Location = new System.Drawing.Point(708, 427);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(317, 32);
+            this.comboBox1.TabIndex = 34;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
+            // panel29
+            // 
+            this.panel29.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(249)))), ((int)(((byte)(245)))));
+            this.panel29.Controls.Add(this.textBox4);
+            this.panel29.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.panel29.Location = new System.Drawing.Point(43, 369);
+            this.panel29.Name = "panel29";
+            this.panel29.Size = new System.Drawing.Size(353, 32);
+            this.panel29.TabIndex = 25;
+            this.panel29.Click += new System.EventHandler(this.Text_Panel_Click);
+            // 
+            // textBox4
+            // 
+            this.textBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(249)))), ((int)(((byte)(245)))));
+            this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(171)))), ((int)(((byte)(109)))));
+            this.textBox4.Location = new System.Drawing.Point(9, 8);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(330, 15);
+            this.textBox4.TabIndex = 1;
+            this.textBox4.Click += new System.EventHandler(this.Text_Panel_Click);
+            // 
+            // label36
+            // 
+            this.label36.AutoSize = true;
+            this.label36.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label36.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(69)))), ((int)(((byte)(2)))));
+            this.label36.Location = new System.Drawing.Point(40, 350);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(73, 16);
+            this.label36.TabIndex = 24;
+            this.label36.Text = "Voter - ID";
+            this.label36.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // pictureBox22
+            // 
+            this.pictureBox22.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox22.Location = new System.Drawing.Point(808, 54);
+            this.pictureBox22.Name = "pictureBox22";
+            this.pictureBox22.Size = new System.Drawing.Size(165, 155);
+            this.pictureBox22.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox22.TabIndex = 17;
+            this.pictureBox22.TabStop = false;
+            this.pictureBox22.Click += new System.EventHandler(this.pictureBox22_Click);
+            // 
+            // label32
+            // 
+            this.label32.AutoSize = true;
+            this.label32.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label32.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(69)))), ((int)(((byte)(2)))));
+            this.label32.Location = new System.Drawing.Point(573, 2);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(159, 31);
+            this.label32.TabIndex = 16;
+            this.label32.Text = "Insert Data";
+            this.label32.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // StudentDataPanel
+            // 
+            this.StudentDataPanel.Controls.Add(this.panel25);
+            this.StudentDataPanel.Controls.Add(this.panel24);
+            this.StudentDataPanel.Controls.Add(this.panel23);
+            this.StudentDataPanel.Controls.Add(this.panel3);
+            this.StudentDataPanel.Controls.Add(this.label31);
+            this.StudentDataPanel.Location = new System.Drawing.Point(1078, 16);
+            this.StudentDataPanel.Name = "StudentDataPanel";
+            this.StudentDataPanel.Size = new System.Drawing.Size(1173, 794);
+            this.StudentDataPanel.TabIndex = 3;
+            this.StudentDataPanel.SizeChanged += new System.EventHandler(this.StudentDataPanel_SizeChanged);
+            // 
+            // panel25
+            // 
+            this.panel25.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(245)))), ((int)(((byte)(240)))));
+            this.panel25.Controls.Add(this.button6);
+            this.panel25.Controls.Add(this.pictureBox21);
+            this.panel25.Location = new System.Drawing.Point(861, 569);
+            this.panel25.Name = "panel25";
+            this.panel25.Size = new System.Drawing.Size(267, 205);
+            this.panel25.TabIndex = 20;
+            // 
+            // button6
+            // 
+            this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(28)))), ((int)(((byte)(9)))));
+            this.button6.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button6.FlatAppearance.BorderSize = 0;
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(171)))), ((int)(((byte)(109)))));
+            this.button6.Location = new System.Drawing.Point(55, 155);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(164, 29);
+            this.button6.TabIndex = 20;
+            this.button6.Text = "Delete";
+            this.button6.UseVisualStyleBackColor = false;
+            // 
+            // pictureBox21
+            // 
+            this.pictureBox21.Image = global::SchoolProject.Properties.Resources.clear;
+            this.pictureBox21.Location = new System.Drawing.Point(70, 12);
+            this.pictureBox21.Name = "pictureBox21";
+            this.pictureBox21.Size = new System.Drawing.Size(140, 128);
+            this.pictureBox21.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox21.TabIndex = 1;
+            this.pictureBox21.TabStop = false;
+            // 
+            // panel24
+            // 
+            this.panel24.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(245)))), ((int)(((byte)(240)))));
+            this.panel24.Controls.Add(this.button5);
+            this.panel24.Controls.Add(this.pictureBox20);
+            this.panel24.Location = new System.Drawing.Point(484, 569);
+            this.panel24.Name = "panel24";
+            this.panel24.Size = new System.Drawing.Size(267, 205);
+            this.panel24.TabIndex = 19;
+            // 
+            // button5
+            // 
+            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(28)))), ((int)(((byte)(9)))));
+            this.button5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button5.FlatAppearance.BorderSize = 0;
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(171)))), ((int)(((byte)(109)))));
+            this.button5.Location = new System.Drawing.Point(57, 155);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(164, 29);
+            this.button5.TabIndex = 19;
+            this.button5.Text = "Update";
+            this.button5.UseVisualStyleBackColor = false;
+            // 
+            // pictureBox20
+            // 
+            this.pictureBox20.Image = global::SchoolProject.Properties.Resources.update;
+            this.pictureBox20.Location = new System.Drawing.Point(69, 12);
+            this.pictureBox20.Name = "pictureBox20";
+            this.pictureBox20.Size = new System.Drawing.Size(142, 128);
+            this.pictureBox20.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox20.TabIndex = 1;
+            this.pictureBox20.TabStop = false;
+            // 
+            // panel23
+            // 
+            this.panel23.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(245)))), ((int)(((byte)(240)))));
+            this.panel23.Controls.Add(this.button4);
+            this.panel23.Controls.Add(this.pictureBox19);
+            this.panel23.Location = new System.Drawing.Point(52, 569);
+            this.panel23.Name = "panel23";
+            this.panel23.Size = new System.Drawing.Size(267, 205);
+            this.panel23.TabIndex = 18;
+            // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(28)))), ((int)(((byte)(9)))));
+            this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button4.FlatAppearance.BorderSize = 0;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(171)))), ((int)(((byte)(109)))));
+            this.button4.Location = new System.Drawing.Point(46, 155);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(164, 29);
+            this.button4.TabIndex = 18;
+            this.button4.Text = "Insert";
+            this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // pictureBox19
+            // 
+            this.pictureBox19.Image = global::SchoolProject.Properties.Resources.move;
+            this.pictureBox19.Location = new System.Drawing.Point(58, 12);
+            this.pictureBox19.Name = "pictureBox19";
+            this.pictureBox19.Size = new System.Drawing.Size(137, 128);
+            this.pictureBox19.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox19.TabIndex = 0;
+            this.pictureBox19.TabStop = false;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(245)))), ((int)(((byte)(240)))));
+            this.panel3.Location = new System.Drawing.Point(52, 77);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(1076, 445);
+            this.panel3.TabIndex = 17;
+            // 
+            // label31
+            // 
+            this.label31.AutoSize = true;
+            this.label31.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label31.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(69)))), ((int)(((byte)(2)))));
+            this.label31.Location = new System.Drawing.Point(547, 6);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(185, 31);
+            this.label31.TabIndex = 16;
+            this.label31.Text = "Student Data";
+            this.label31.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
             // DashboardPanel
             // 
             this.DashboardPanel.Controls.Add(this.panel22);
@@ -909,11 +2086,108 @@ namespace SchoolProject
             this.DashboardPanel.Controls.Add(this.panel18);
             this.DashboardPanel.Controls.Add(this.StudentContainerDashboardPanel);
             this.DashboardPanel.Controls.Add(this.label26);
-            this.DashboardPanel.Location = new System.Drawing.Point(1114, 116);
+            this.DashboardPanel.Location = new System.Drawing.Point(1042, 160);
             this.DashboardPanel.Name = "DashboardPanel";
             this.DashboardPanel.Size = new System.Drawing.Size(1176, 800);
             this.DashboardPanel.TabIndex = 2;
             this.DashboardPanel.SizeChanged += new System.EventHandler(this.DashboardPanel_SizeChanged);
+            // 
+            // panel22
+            // 
+            this.panel22.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(245)))), ((int)(((byte)(240)))));
+            this.panel22.Location = new System.Drawing.Point(824, 467);
+            this.panel22.Name = "panel22";
+            this.panel22.Size = new System.Drawing.Size(307, 295);
+            this.panel22.TabIndex = 19;
+            // 
+            // panel20
+            // 
+            this.panel20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(245)))), ((int)(((byte)(240)))));
+            this.panel20.Location = new System.Drawing.Point(442, 467);
+            this.panel20.Name = "panel20";
+            this.panel20.Size = new System.Drawing.Size(307, 295);
+            this.panel20.TabIndex = 18;
+            // 
+            // panel18
+            // 
+            this.panel18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(245)))), ((int)(((byte)(240)))));
+            this.panel18.Location = new System.Drawing.Point(46, 467);
+            this.panel18.Name = "panel18";
+            this.panel18.Size = new System.Drawing.Size(307, 295);
+            this.panel18.TabIndex = 17;
+            // 
+            // StudentContainerDashboardPanel
+            // 
+            this.StudentContainerDashboardPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(245)))), ((int)(((byte)(240)))));
+            this.StudentContainerDashboardPanel.Controls.Add(this.panel16);
+            this.StudentContainerDashboardPanel.Controls.Add(this.panel14);
+            this.StudentContainerDashboardPanel.Location = new System.Drawing.Point(46, 96);
+            this.StudentContainerDashboardPanel.Name = "StudentContainerDashboardPanel";
+            this.StudentContainerDashboardPanel.Size = new System.Drawing.Size(1085, 296);
+            this.StudentContainerDashboardPanel.TabIndex = 16;
+            // 
+            // panel16
+            // 
+            this.panel16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(235)))), ((int)(((byte)(220)))));
+            this.panel16.Controls.Add(this.button3);
+            this.panel16.Controls.Add(this.button2);
+            this.panel16.Controls.Add(this.button1);
+            this.panel16.Location = new System.Drawing.Point(829, 39);
+            this.panel16.Name = "panel16";
+            this.panel16.Size = new System.Drawing.Size(221, 212);
+            this.panel16.TabIndex = 1;
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(28)))), ((int)(((byte)(9)))));
+            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(171)))), ((int)(((byte)(109)))));
+            this.button3.Location = new System.Drawing.Point(33, 149);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(164, 48);
+            this.button3.TabIndex = 18;
+            this.button3.Text = "Delete";
+            this.button3.UseVisualStyleBackColor = false;
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(28)))), ((int)(((byte)(9)))));
+            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(171)))), ((int)(((byte)(109)))));
+            this.button2.Location = new System.Drawing.Point(33, 84);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(164, 48);
+            this.button2.TabIndex = 18;
+            this.button2.Text = "Update";
+            this.button2.UseVisualStyleBackColor = false;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(28)))), ((int)(((byte)(9)))));
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(171)))), ((int)(((byte)(109)))));
+            this.button1.Location = new System.Drawing.Point(33, 17);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(164, 48);
+            this.button1.TabIndex = 17;
+            this.button1.Text = "Insert";
+            this.button1.UseVisualStyleBackColor = false;
+            // 
+            // panel14
+            // 
+            this.panel14.Location = new System.Drawing.Point(60, 39);
+            this.panel14.Name = "panel14";
+            this.panel14.Size = new System.Drawing.Size(743, 212);
+            this.panel14.TabIndex = 0;
             // 
             // label26
             // 
@@ -995,6 +2269,19 @@ namespace SchoolProject
             this.RegistConfirmPassPanel.TabIndex = 20;
             this.RegistConfirmPassPanel.Click += new System.EventHandler(this.Text_Panel_Click);
             // 
+            // pictureBox10
+            // 
+            this.pictureBox10.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox10.Image = global::SchoolProject.Properties.Resources.eye;
+            this.pictureBox10.Location = new System.Drawing.Point(524, 14);
+            this.pictureBox10.Name = "pictureBox10";
+            this.pictureBox10.Size = new System.Drawing.Size(34, 33);
+            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox10.TabIndex = 2;
+            this.pictureBox10.TabStop = false;
+            this.pictureBox10.Visible = false;
+            this.pictureBox10.Click += new System.EventHandler(this.Password_Show_Click);
+            // 
             // RegistConfirmText
             // 
             this.RegistConfirmText.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(249)))), ((int)(((byte)(245)))));
@@ -1074,6 +2361,19 @@ namespace SchoolProject
             this.RegistPassPanel.TabIndex = 16;
             this.RegistPassPanel.Click += new System.EventHandler(this.Text_Panel_Click);
             // 
+            // pictureBox9
+            // 
+            this.pictureBox9.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox9.Image = global::SchoolProject.Properties.Resources.eye;
+            this.pictureBox9.Location = new System.Drawing.Point(524, 14);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(34, 33);
+            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox9.TabIndex = 2;
+            this.pictureBox9.TabStop = false;
+            this.pictureBox9.Visible = false;
+            this.pictureBox9.Click += new System.EventHandler(this.Password_Show_Click);
+            // 
             // RegistPassText
             // 
             this.RegistPassText.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(249)))), ((int)(((byte)(245)))));
@@ -1136,7 +2436,7 @@ namespace SchoolProject
             this.LoginPanel.Controls.Add(this.LoginPassPanel);
             this.LoginPanel.Controls.Add(this.LoginUserPanel);
             this.LoginPanel.Controls.Add(this.label10);
-            this.LoginPanel.Location = new System.Drawing.Point(1152, 34);
+            this.LoginPanel.Location = new System.Drawing.Point(946, 45);
             this.LoginPanel.Name = "LoginPanel";
             this.LoginPanel.Size = new System.Drawing.Size(1180, 800);
             this.LoginPanel.TabIndex = 0;
@@ -1236,6 +2536,19 @@ namespace SchoolProject
             this.LoginPassPanel.TabIndex = 6;
             this.LoginPassPanel.Click += new System.EventHandler(this.Text_Panel_Click);
             // 
+            // pictureBox8
+            // 
+            this.pictureBox8.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox8.Image = global::SchoolProject.Properties.Resources.eye;
+            this.pictureBox8.Location = new System.Drawing.Point(524, 14);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(34, 33);
+            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox8.TabIndex = 2;
+            this.pictureBox8.TabStop = false;
+            this.pictureBox8.Visible = false;
+            this.pictureBox8.Click += new System.EventHandler(this.Password_Show_Click);
+            // 
             // LoginPassText
             // 
             this.LoginPassText.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(249)))), ((int)(((byte)(245)))));
@@ -1286,781 +2599,106 @@ namespace SchoolProject
             this.label10.Text = "Login Window";
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // StudentContainerDashboardPanel
-            // 
-            this.StudentContainerDashboardPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(245)))), ((int)(((byte)(240)))));
-            this.StudentContainerDashboardPanel.Controls.Add(this.panel16);
-            this.StudentContainerDashboardPanel.Controls.Add(this.panel14);
-            this.StudentContainerDashboardPanel.Location = new System.Drawing.Point(46, 96);
-            this.StudentContainerDashboardPanel.Name = "StudentContainerDashboardPanel";
-            this.StudentContainerDashboardPanel.Size = new System.Drawing.Size(1085, 296);
-            this.StudentContainerDashboardPanel.TabIndex = 16;
-            // 
-            // panel14
-            // 
-            this.panel14.Location = new System.Drawing.Point(60, 39);
-            this.panel14.Name = "panel14";
-            this.panel14.Size = new System.Drawing.Size(743, 212);
-            this.panel14.TabIndex = 0;
-            // 
-            // panel16
-            // 
-            this.panel16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(235)))), ((int)(((byte)(220)))));
-            this.panel16.Controls.Add(this.button3);
-            this.panel16.Controls.Add(this.button2);
-            this.panel16.Controls.Add(this.button1);
-            this.panel16.Location = new System.Drawing.Point(829, 39);
-            this.panel16.Name = "panel16";
-            this.panel16.Size = new System.Drawing.Size(221, 212);
-            this.panel16.TabIndex = 1;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(28)))), ((int)(((byte)(9)))));
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(171)))), ((int)(((byte)(109)))));
-            this.button1.Location = new System.Drawing.Point(33, 17);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(164, 48);
-            this.button1.TabIndex = 17;
-            this.button1.Text = "Insert";
-            this.button1.UseVisualStyleBackColor = false;
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(28)))), ((int)(((byte)(9)))));
-            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(171)))), ((int)(((byte)(109)))));
-            this.button2.Location = new System.Drawing.Point(33, 84);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(164, 48);
-            this.button2.TabIndex = 18;
-            this.button2.Text = "Update";
-            this.button2.UseVisualStyleBackColor = false;
-            // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(28)))), ((int)(((byte)(9)))));
-            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(171)))), ((int)(((byte)(109)))));
-            this.button3.Location = new System.Drawing.Point(33, 149);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(164, 48);
-            this.button3.TabIndex = 18;
-            this.button3.Text = "Delete";
-            this.button3.UseVisualStyleBackColor = false;
-            // 
-            // panel18
-            // 
-            this.panel18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(245)))), ((int)(((byte)(240)))));
-            this.panel18.Location = new System.Drawing.Point(46, 467);
-            this.panel18.Name = "panel18";
-            this.panel18.Size = new System.Drawing.Size(307, 295);
-            this.panel18.TabIndex = 17;
-            // 
-            // panel20
-            // 
-            this.panel20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(245)))), ((int)(((byte)(240)))));
-            this.panel20.Location = new System.Drawing.Point(442, 467);
-            this.panel20.Name = "panel20";
-            this.panel20.Size = new System.Drawing.Size(307, 295);
-            this.panel20.TabIndex = 18;
-            // 
-            // panel22
-            // 
-            this.panel22.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(245)))), ((int)(((byte)(240)))));
-            this.panel22.Location = new System.Drawing.Point(824, 467);
-            this.panel22.Name = "panel22";
-            this.panel22.Size = new System.Drawing.Size(307, 295);
-            this.panel22.TabIndex = 19;
-            // 
-            // StudentDataPanel
-            // 
-            this.StudentDataPanel.Controls.Add(this.panel25);
-            this.StudentDataPanel.Controls.Add(this.panel24);
-            this.StudentDataPanel.Controls.Add(this.panel23);
-            this.StudentDataPanel.Controls.Add(this.panel3);
-            this.StudentDataPanel.Controls.Add(this.label31);
-            this.StudentDataPanel.Location = new System.Drawing.Point(1162, 21);
-            this.StudentDataPanel.Name = "StudentDataPanel";
-            this.StudentDataPanel.Size = new System.Drawing.Size(1173, 794);
-            this.StudentDataPanel.TabIndex = 3;
-            this.StudentDataPanel.SizeChanged += new System.EventHandler(this.StudentDataPanel_SizeChanged);
-            // 
-            // label31
-            // 
-            this.label31.AutoSize = true;
-            this.label31.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label31.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(69)))), ((int)(((byte)(2)))));
-            this.label31.Location = new System.Drawing.Point(547, 6);
-            this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(185, 31);
-            this.label31.TabIndex = 16;
-            this.label31.Text = "Student Data";
-            this.label31.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(245)))), ((int)(((byte)(240)))));
-            this.panel3.Location = new System.Drawing.Point(52, 77);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1076, 445);
-            this.panel3.TabIndex = 17;
-            // 
-            // panel23
-            // 
-            this.panel23.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(245)))), ((int)(((byte)(240)))));
-            this.panel23.Controls.Add(this.button4);
-            this.panel23.Controls.Add(this.pictureBox19);
-            this.panel23.Location = new System.Drawing.Point(52, 569);
-            this.panel23.Name = "panel23";
-            this.panel23.Size = new System.Drawing.Size(267, 205);
-            this.panel23.TabIndex = 18;
-            // 
-            // panel24
-            // 
-            this.panel24.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(245)))), ((int)(((byte)(240)))));
-            this.panel24.Controls.Add(this.button5);
-            this.panel24.Controls.Add(this.pictureBox20);
-            this.panel24.Location = new System.Drawing.Point(484, 569);
-            this.panel24.Name = "panel24";
-            this.panel24.Size = new System.Drawing.Size(267, 205);
-            this.panel24.TabIndex = 19;
-            // 
-            // panel25
-            // 
-            this.panel25.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(245)))), ((int)(((byte)(240)))));
-            this.panel25.Controls.Add(this.button6);
-            this.panel25.Controls.Add(this.pictureBox21);
-            this.panel25.Location = new System.Drawing.Point(861, 569);
-            this.panel25.Name = "panel25";
-            this.panel25.Size = new System.Drawing.Size(267, 205);
-            this.panel25.TabIndex = 20;
-            // 
-            // button4
-            // 
-            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(28)))), ((int)(((byte)(9)))));
-            this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(171)))), ((int)(((byte)(109)))));
-            this.button4.Location = new System.Drawing.Point(46, 155);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(164, 29);
-            this.button4.TabIndex = 18;
-            this.button4.Text = "Insert";
-            this.button4.UseVisualStyleBackColor = false;
-            // 
-            // button5
-            // 
-            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(28)))), ((int)(((byte)(9)))));
-            this.button5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(171)))), ((int)(((byte)(109)))));
-            this.button5.Location = new System.Drawing.Point(57, 155);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(164, 29);
-            this.button5.TabIndex = 19;
-            this.button5.Text = "Update";
-            this.button5.UseVisualStyleBackColor = false;
-            // 
-            // button6
-            // 
-            this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(28)))), ((int)(((byte)(9)))));
-            this.button6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button6.FlatAppearance.BorderSize = 0;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(171)))), ((int)(((byte)(109)))));
-            this.button6.Location = new System.Drawing.Point(55, 155);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(164, 29);
-            this.button6.TabIndex = 20;
-            this.button6.Text = "Delete";
-            this.button6.UseVisualStyleBackColor = false;
-            // 
-            // pictureBox21
-            // 
-            this.pictureBox21.Image = global::SchoolProject.Properties.Resources.clear;
-            this.pictureBox21.Location = new System.Drawing.Point(70, 12);
-            this.pictureBox21.Name = "pictureBox21";
-            this.pictureBox21.Size = new System.Drawing.Size(140, 128);
-            this.pictureBox21.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox21.TabIndex = 1;
-            this.pictureBox21.TabStop = false;
-            // 
-            // pictureBox20
-            // 
-            this.pictureBox20.Image = global::SchoolProject.Properties.Resources.update;
-            this.pictureBox20.Location = new System.Drawing.Point(69, 12);
-            this.pictureBox20.Name = "pictureBox20";
-            this.pictureBox20.Size = new System.Drawing.Size(142, 128);
-            this.pictureBox20.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox20.TabIndex = 1;
-            this.pictureBox20.TabStop = false;
-            // 
-            // pictureBox19
-            // 
-            this.pictureBox19.Image = global::SchoolProject.Properties.Resources.move;
-            this.pictureBox19.Location = new System.Drawing.Point(58, 12);
-            this.pictureBox19.Name = "pictureBox19";
-            this.pictureBox19.Size = new System.Drawing.Size(137, 128);
-            this.pictureBox19.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox19.TabIndex = 0;
-            this.pictureBox19.TabStop = false;
-            // 
-            // pictureBox10
-            // 
-            this.pictureBox10.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox10.Image = global::SchoolProject.Properties.Resources.eye;
-            this.pictureBox10.Location = new System.Drawing.Point(524, 14);
-            this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(34, 33);
-            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox10.TabIndex = 2;
-            this.pictureBox10.TabStop = false;
-            this.pictureBox10.Visible = false;
-            this.pictureBox10.Click += new System.EventHandler(this.Password_Show_Click);
-            // 
-            // pictureBox9
-            // 
-            this.pictureBox9.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox9.Image = global::SchoolProject.Properties.Resources.eye;
-            this.pictureBox9.Location = new System.Drawing.Point(524, 14);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(34, 33);
-            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox9.TabIndex = 2;
-            this.pictureBox9.TabStop = false;
-            this.pictureBox9.Visible = false;
-            this.pictureBox9.Click += new System.EventHandler(this.Password_Show_Click);
-            // 
-            // pictureBox8
-            // 
-            this.pictureBox8.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox8.Image = global::SchoolProject.Properties.Resources.eye;
-            this.pictureBox8.Location = new System.Drawing.Point(524, 14);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(34, 33);
-            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox8.TabIndex = 2;
-            this.pictureBox8.TabStop = false;
-            this.pictureBox8.Visible = false;
-            this.pictureBox8.Click += new System.EventHandler(this.Password_Show_Click);
-            // 
-            // pictureBox18
-            // 
-            this.pictureBox18.Image = global::SchoolProject.Properties.Resources.analysis;
-            this.pictureBox18.Location = new System.Drawing.Point(12, 6);
-            this.pictureBox18.Name = "pictureBox18";
-            this.pictureBox18.Size = new System.Drawing.Size(28, 26);
-            this.pictureBox18.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox18.TabIndex = 1;
-            this.pictureBox18.TabStop = false;
-            this.pictureBox18.MouseEnter += new System.EventHandler(this.ExpPanel_Mouse_Enter);
-            this.pictureBox18.MouseLeave += new System.EventHandler(this.ExpPanel_Mouse_Leave);
-            // 
-            // pictureBox17
-            // 
-            this.pictureBox17.Image = global::SchoolProject.Properties.Resources.delete;
-            this.pictureBox17.Location = new System.Drawing.Point(12, 6);
-            this.pictureBox17.Name = "pictureBox17";
-            this.pictureBox17.Size = new System.Drawing.Size(28, 26);
-            this.pictureBox17.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox17.TabIndex = 1;
-            this.pictureBox17.TabStop = false;
-            this.pictureBox17.MouseEnter += new System.EventHandler(this.ExpPanel_Mouse_Enter);
-            this.pictureBox17.MouseLeave += new System.EventHandler(this.ExpPanel_Mouse_Leave);
-            // 
-            // pictureBox16
-            // 
-            this.pictureBox16.Image = global::SchoolProject.Properties.Resources.real_time;
-            this.pictureBox16.Location = new System.Drawing.Point(10, 6);
-            this.pictureBox16.Name = "pictureBox16";
-            this.pictureBox16.Size = new System.Drawing.Size(28, 26);
-            this.pictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox16.TabIndex = 1;
-            this.pictureBox16.TabStop = false;
-            this.pictureBox16.MouseEnter += new System.EventHandler(this.ExpPanel_Mouse_Enter);
-            this.pictureBox16.MouseLeave += new System.EventHandler(this.ExpPanel_Mouse_Leave);
-            // 
-            // pictureBox15
-            // 
-            this.pictureBox15.Image = global::SchoolProject.Properties.Resources.above;
-            this.pictureBox15.Location = new System.Drawing.Point(10, 3);
-            this.pictureBox15.Name = "pictureBox15";
-            this.pictureBox15.Size = new System.Drawing.Size(28, 26);
-            this.pictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox15.TabIndex = 1;
-            this.pictureBox15.TabStop = false;
-            this.pictureBox15.MouseEnter += new System.EventHandler(this.ExpPanel_Mouse_Enter);
-            this.pictureBox15.MouseLeave += new System.EventHandler(this.ExpPanel_Mouse_Leave);
-            // 
-            // pictureBox14
-            // 
-            this.pictureBox14.Image = global::SchoolProject.Properties.Resources.bus;
-            this.pictureBox14.Location = new System.Drawing.Point(10, 9);
-            this.pictureBox14.Name = "pictureBox14";
-            this.pictureBox14.Size = new System.Drawing.Size(28, 26);
-            this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox14.TabIndex = 1;
-            this.pictureBox14.TabStop = false;
-            this.pictureBox14.DoubleClick += new System.EventHandler(this.SidePanel_DoubleClick);
-            this.pictureBox14.MouseEnter += new System.EventHandler(this.SidePanel_Hover_Enter);
-            this.pictureBox14.MouseLeave += new System.EventHandler(this.SidePanel_Hover_Left);
-            // 
-            // pictureBox13
-            // 
-            this.pictureBox13.Image = global::SchoolProject.Properties.Resources.book;
-            this.pictureBox13.Location = new System.Drawing.Point(10, 9);
-            this.pictureBox13.Name = "pictureBox13";
-            this.pictureBox13.Size = new System.Drawing.Size(28, 26);
-            this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox13.TabIndex = 1;
-            this.pictureBox13.TabStop = false;
-            this.pictureBox13.DoubleClick += new System.EventHandler(this.SidePanel_DoubleClick);
-            this.pictureBox13.MouseEnter += new System.EventHandler(this.SidePanel_Hover_Enter);
-            this.pictureBox13.MouseLeave += new System.EventHandler(this.SidePanel_Hover_Left);
-            // 
-            // pictureBox12
-            // 
-            this.pictureBox12.Image = global::SchoolProject.Properties.Resources.reading_book;
-            this.pictureBox12.Location = new System.Drawing.Point(5, 6);
-            this.pictureBox12.Name = "pictureBox12";
-            this.pictureBox12.Size = new System.Drawing.Size(28, 26);
-            this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox12.TabIndex = 1;
-            this.pictureBox12.TabStop = false;
-            this.pictureBox12.Click += new System.EventHandler(this.SidePanel_Click);
-            this.pictureBox12.DoubleClick += new System.EventHandler(this.StudentSidePanel_Expand_DoubleClick);
-            this.pictureBox12.MouseEnter += new System.EventHandler(this.SidePanel_Hover_Enter);
-            this.pictureBox12.MouseLeave += new System.EventHandler(this.SidePanel_Hover_Left);
-            // 
-            // pictureBox11
-            // 
-            this.pictureBox11.Image = global::SchoolProject.Properties.Resources.dashboard;
-            this.pictureBox11.Location = new System.Drawing.Point(10, 6);
-            this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(28, 26);
-            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox11.TabIndex = 1;
-            this.pictureBox11.TabStop = false;
-            this.pictureBox11.Click += new System.EventHandler(this.SidePanel_Click);
-            this.pictureBox11.DoubleClick += new System.EventHandler(this.SidePanel_DoubleClick);
-            this.pictureBox11.MouseEnter += new System.EventHandler(this.SidePanel_Hover_Enter);
-            this.pictureBox11.MouseLeave += new System.EventHandler(this.SidePanel_Hover_Left);
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.Image = global::SchoolProject.Properties.Resources.edit;
-            this.pictureBox7.Location = new System.Drawing.Point(5, 14);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(28, 26);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox7.TabIndex = 1;
-            this.pictureBox7.TabStop = false;
-            this.pictureBox7.Click += new System.EventHandler(this.SidePanel_Click);
-            this.pictureBox7.DoubleClick += new System.EventHandler(this.SidePanel_DoubleClick);
-            this.pictureBox7.MouseEnter += new System.EventHandler(this.SidePanel_Hover_Enter);
-            this.pictureBox7.MouseLeave += new System.EventHandler(this.SidePanel_Hover_Left);
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.Image = global::SchoolProject.Properties.Resources.login;
-            this.pictureBox6.Location = new System.Drawing.Point(5, 9);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(28, 26);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox6.TabIndex = 1;
-            this.pictureBox6.TabStop = false;
-            this.pictureBox6.Click += new System.EventHandler(this.SidePanel_Click);
-            this.pictureBox6.DoubleClick += new System.EventHandler(this.SidePanel_DoubleClick);
-            this.pictureBox6.MouseEnter += new System.EventHandler(this.SidePanel_Hover_Enter);
-            this.pictureBox6.MouseLeave += new System.EventHandler(this.SidePanel_Hover_Left);
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pictureBox5.Image = global::SchoolProject.Properties.Resources.my_logo2ico;
-            this.pictureBox5.Location = new System.Drawing.Point(5, 0);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(33, 32);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox5.TabIndex = 3;
-            this.pictureBox5.TabStop = false;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = global::SchoolProject.Properties.Resources.minimize;
-            this.pictureBox4.Location = new System.Drawing.Point(16, 12);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(12, 12);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox4.TabIndex = 2;
-            this.pictureBox4.TabStop = false;
-            this.pictureBox4.Click += new System.EventHandler(this.panel7_Click);
-            this.pictureBox4.MouseEnter += new System.EventHandler(this.picture_title_btn_entered);
-            this.pictureBox4.MouseLeave += new System.EventHandler(this.picture_title_btn_left);
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::SchoolProject.Properties.Resources.squares_min;
-            this.pictureBox3.Location = new System.Drawing.Point(19, 12);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(12, 12);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 1;
-            this.pictureBox3.TabStop = false;
-            this.pictureBox3.Click += new System.EventHandler(this.panel6_Click);
-            this.pictureBox3.MouseEnter += new System.EventHandler(this.picture_title_btn_entered);
-            this.pictureBox3.MouseLeave += new System.EventHandler(this.picture_title_btn_left);
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::SchoolProject.Properties.Resources.close;
-            this.pictureBox2.Location = new System.Drawing.Point(28, 12);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(12, 12);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 0;
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.panel5_Click);
-            this.pictureBox2.MouseEnter += new System.EventHandler(this.picture_title_btn_entered);
-            this.pictureBox2.MouseLeave += new System.EventHandler(this.picture_title_btn_left);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pictureBox1.Image = global::SchoolProject.Properties.Resources.twitter;
-            this.pictureBox1.Location = new System.Drawing.Point(1121, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(28, 26);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 7;
-            this.pictureBox1.TabStop = false;
-            // 
-            // StudentInsertData
-            // 
-            this.StudentInsertData.Controls.Add(this.panel33);
-            this.StudentInsertData.Controls.Add(this.label40);
-            this.StudentInsertData.Controls.Add(this.panel32);
-            this.StudentInsertData.Controls.Add(this.label39);
-            this.StudentInsertData.Controls.Add(this.panel31);
-            this.StudentInsertData.Controls.Add(this.label38);
-            this.StudentInsertData.Controls.Add(this.panel30);
-            this.StudentInsertData.Controls.Add(this.label37);
-            this.StudentInsertData.Controls.Add(this.panel29);
-            this.StudentInsertData.Controls.Add(this.label36);
-            this.StudentInsertData.Controls.Add(this.panel26);
-            this.StudentInsertData.Controls.Add(this.label35);
-            this.StudentInsertData.Controls.Add(this.panel28);
-            this.StudentInsertData.Controls.Add(this.label34);
-            this.StudentInsertData.Controls.Add(this.panel27);
-            this.StudentInsertData.Controls.Add(this.label33);
-            this.StudentInsertData.Controls.Add(this.pictureBox22);
-            this.StudentInsertData.Controls.Add(this.label32);
-            this.StudentInsertData.Location = new System.Drawing.Point(6, 4);
-            this.StudentInsertData.Name = "StudentInsertData";
-            this.StudentInsertData.Size = new System.Drawing.Size(1168, 794);
-            this.StudentInsertData.TabIndex = 4;
-            // 
-            // label32
-            // 
-            this.label32.AutoSize = true;
-            this.label32.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label32.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(69)))), ((int)(((byte)(2)))));
-            this.label32.Location = new System.Drawing.Point(573, 2);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(159, 31);
-            this.label32.TabIndex = 16;
-            this.label32.Text = "Insert Data";
-            this.label32.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // pictureBox22
-            // 
-            this.pictureBox22.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox22.Location = new System.Drawing.Point(872, 62);
-            this.pictureBox22.Name = "pictureBox22";
-            this.pictureBox22.Size = new System.Drawing.Size(165, 194);
-            this.pictureBox22.TabIndex = 17;
-            this.pictureBox22.TabStop = false;
-            // 
-            // label33
-            // 
-            this.label33.AutoSize = true;
-            this.label33.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label33.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(69)))), ((int)(((byte)(2)))));
-            this.label33.Location = new System.Drawing.Point(102, 55);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(157, 25);
-            this.label33.TabIndex = 18;
-            this.label33.Text = "Student_ID: - ";
-            this.label33.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // panel27
-            // 
-            this.panel27.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(249)))), ((int)(((byte)(245)))));
-            this.panel27.Controls.Add(this.textBox1);
-            this.panel27.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.panel27.Location = new System.Drawing.Point(107, 81);
-            this.panel27.Name = "panel27";
-            this.panel27.Size = new System.Drawing.Size(497, 45);
-            this.panel27.TabIndex = 19;
-            // 
-            // textBox1
-            // 
-            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(249)))), ((int)(((byte)(245)))));
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(171)))), ((int)(((byte)(109)))));
-            this.textBox1.Location = new System.Drawing.Point(8, 11);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(445, 24);
-            this.textBox1.TabIndex = 1;
-            // 
-            // panel28
-            // 
-            this.panel28.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(249)))), ((int)(((byte)(245)))));
-            this.panel28.Controls.Add(this.textBox2);
-            this.panel28.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.panel28.Location = new System.Drawing.Point(107, 178);
-            this.panel28.Name = "panel28";
-            this.panel28.Size = new System.Drawing.Size(497, 45);
-            this.panel28.TabIndex = 21;
-            // 
-            // textBox2
-            // 
-            this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(249)))), ((int)(((byte)(245)))));
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(171)))), ((int)(((byte)(109)))));
-            this.textBox2.Location = new System.Drawing.Point(8, 11);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(445, 22);
-            this.textBox2.TabIndex = 1;
-            // 
-            // label34
-            // 
-            this.label34.AutoSize = true;
-            this.label34.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label34.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(69)))), ((int)(((byte)(2)))));
-            this.label34.Location = new System.Drawing.Point(102, 152);
-            this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(101, 25);
-            this.label34.TabIndex = 20;
-            this.label34.Text = "Name: - ";
-            this.label34.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // panel26
-            // 
-            this.panel26.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(249)))), ((int)(((byte)(245)))));
-            this.panel26.Controls.Add(this.textBox3);
-            this.panel26.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.panel26.Location = new System.Drawing.Point(107, 269);
-            this.panel26.Name = "panel26";
-            this.panel26.Size = new System.Drawing.Size(497, 45);
-            this.panel26.TabIndex = 23;
-            // 
-            // textBox3
-            // 
-            this.textBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(249)))), ((int)(((byte)(245)))));
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(171)))), ((int)(((byte)(109)))));
-            this.textBox3.Location = new System.Drawing.Point(8, 11);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(445, 22);
-            this.textBox3.TabIndex = 1;
-            // 
-            // label35
-            // 
-            this.label35.AutoSize = true;
-            this.label35.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label35.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(69)))), ((int)(((byte)(2)))));
-            this.label35.Location = new System.Drawing.Point(102, 243);
-            this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(193, 25);
-            this.label35.TabIndex = 22;
-            this.label35.Text = "Father\'s Name: - ";
-            this.label35.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // panel29
-            // 
-            this.panel29.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(249)))), ((int)(((byte)(245)))));
-            this.panel29.Controls.Add(this.textBox4);
-            this.panel29.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.panel29.Location = new System.Drawing.Point(107, 378);
-            this.panel29.Name = "panel29";
-            this.panel29.Size = new System.Drawing.Size(497, 45);
-            this.panel29.TabIndex = 25;
-            // 
-            // textBox4
-            // 
-            this.textBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(249)))), ((int)(((byte)(245)))));
-            this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(171)))), ((int)(((byte)(109)))));
-            this.textBox4.Location = new System.Drawing.Point(8, 11);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(445, 22);
-            this.textBox4.TabIndex = 1;
-            // 
-            // label36
-            // 
-            this.label36.AutoSize = true;
-            this.label36.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label36.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(69)))), ((int)(((byte)(2)))));
-            this.label36.Location = new System.Drawing.Point(102, 352);
-            this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(112, 25);
-            this.label36.TabIndex = 24;
-            this.label36.Text = "Voter - ID";
-            this.label36.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // panel30
-            // 
-            this.panel30.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(249)))), ((int)(((byte)(245)))));
-            this.panel30.Controls.Add(this.textBox5);
-            this.panel30.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.panel30.Location = new System.Drawing.Point(107, 498);
-            this.panel30.Name = "panel30";
-            this.panel30.Size = new System.Drawing.Size(497, 45);
-            this.panel30.TabIndex = 27;
-            // 
-            // textBox5
-            // 
-            this.textBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(249)))), ((int)(((byte)(245)))));
-            this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(171)))), ((int)(((byte)(109)))));
-            this.textBox5.Location = new System.Drawing.Point(8, 11);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(445, 22);
-            this.textBox5.TabIndex = 1;
-            // 
-            // label37
-            // 
-            this.label37.AutoSize = true;
-            this.label37.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label37.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(69)))), ((int)(((byte)(2)))));
-            this.label37.Location = new System.Drawing.Point(102, 472);
-            this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(167, 25);
-            this.label37.TabIndex = 26;
-            this.label37.Text = "Phone Number";
-            this.label37.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // panel31
-            // 
-            this.panel31.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(249)))), ((int)(((byte)(245)))));
-            this.panel31.Controls.Add(this.textBox6);
-            this.panel31.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.panel31.Location = new System.Drawing.Point(107, 629);
-            this.panel31.Name = "panel31";
-            this.panel31.Size = new System.Drawing.Size(1018, 141);
-            this.panel31.TabIndex = 29;
-            // 
-            // textBox6
-            // 
-            this.textBox6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(249)))), ((int)(((byte)(245)))));
-            this.textBox6.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(171)))), ((int)(((byte)(109)))));
-            this.textBox6.Location = new System.Drawing.Point(8, 11);
-            this.textBox6.Multiline = true;
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(987, 121);
-            this.textBox6.TabIndex = 1;
-            // 
-            // label38
-            // 
-            this.label38.AutoSize = true;
-            this.label38.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label38.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(69)))), ((int)(((byte)(2)))));
-            this.label38.Location = new System.Drawing.Point(102, 603);
-            this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(101, 25);
-            this.label38.TabIndex = 28;
-            this.label38.Text = "Name: - ";
-            this.label38.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // panel32
-            // 
-            this.panel32.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(249)))), ((int)(((byte)(245)))));
-            this.panel32.Controls.Add(this.textBox7);
-            this.panel32.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.panel32.Location = new System.Drawing.Point(776, 378);
-            this.panel32.Name = "panel32";
-            this.panel32.Size = new System.Drawing.Size(317, 45);
-            this.panel32.TabIndex = 31;
-            // 
-            // textBox7
-            // 
-            this.textBox7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(249)))), ((int)(((byte)(245)))));
-            this.textBox7.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(171)))), ((int)(((byte)(109)))));
-            this.textBox7.Location = new System.Drawing.Point(8, 11);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(292, 22);
-            this.textBox7.TabIndex = 1;
-            // 
-            // label39
-            // 
-            this.label39.AutoSize = true;
-            this.label39.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label39.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(69)))), ((int)(((byte)(2)))));
-            this.label39.Location = new System.Drawing.Point(771, 350);
-            this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(118, 25);
-            this.label39.TabIndex = 30;
-            this.label39.Text = "Roll No: - ";
-            this.label39.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // panel33
-            // 
-            this.panel33.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(249)))), ((int)(((byte)(245)))));
-            this.panel33.Controls.Add(this.textBox8);
-            this.panel33.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.panel33.Location = new System.Drawing.Point(776, 472);
-            this.panel33.Name = "panel33";
-            this.panel33.Size = new System.Drawing.Size(317, 45);
-            this.panel33.TabIndex = 33;
-            // 
-            // textBox8
-            // 
-            this.textBox8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(249)))), ((int)(((byte)(245)))));
-            this.textBox8.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(171)))), ((int)(((byte)(109)))));
-            this.textBox8.Location = new System.Drawing.Point(8, 11);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(273, 22);
-            this.textBox8.TabIndex = 1;
-            // 
-            // label40
-            // 
-            this.label40.AutoSize = true;
-            this.label40.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label40.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(69)))), ((int)(((byte)(2)))));
-            this.label40.Location = new System.Drawing.Point(771, 446);
-            this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(71, 25);
-            this.label40.TabIndex = 32;
-            this.label40.Text = "Class";
-            this.label40.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
+            // 
+            // StudentDeleteData
+            // 
+            this.StudentDeleteData.Controls.Add(this.label56);
+            this.StudentDeleteData.Controls.Add(this.panel44);
+            this.StudentDeleteData.Controls.Add(this.panel41);
+            this.StudentDeleteData.Controls.Add(this.panel43);
+            this.StudentDeleteData.Controls.Add(this.label57);
+            this.StudentDeleteData.Location = new System.Drawing.Point(3, 6);
+            this.StudentDeleteData.Name = "StudentDeleteData";
+            this.StudentDeleteData.Size = new System.Drawing.Size(1153, 798);
+            this.StudentDeleteData.TabIndex = 6;
+            // 
+            // panel41
+            // 
+            this.panel41.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(249)))), ((int)(((byte)(245)))));
+            this.panel41.Controls.Add(this.panel42);
+            this.panel41.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.panel41.Location = new System.Drawing.Point(88, 118);
+            this.panel41.Name = "panel41";
+            this.panel41.Size = new System.Drawing.Size(353, 0);
+            this.panel41.TabIndex = 78;
+            // 
+            // panel42
+            // 
+            this.panel42.Controls.Add(this.label55);
+            this.panel42.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel42.Location = new System.Drawing.Point(0, 0);
+            this.panel42.Name = "panel42";
+            this.panel42.Size = new System.Drawing.Size(353, 37);
+            this.panel42.TabIndex = 0;
+            // 
+            // label55
+            // 
+            this.label55.Dock = System.Windows.Forms.DockStyle.Left;
+            this.label55.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label55.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(69)))), ((int)(((byte)(2)))));
+            this.label55.Location = new System.Drawing.Point(0, 0);
+            this.label55.Name = "label55";
+            this.label55.Size = new System.Drawing.Size(87, 37);
+            this.label55.TabIndex = 65;
+            this.label55.Text = "Student_ID";
+            this.label55.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // panel43
+            // 
+            this.panel43.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(249)))), ((int)(((byte)(245)))));
+            this.panel43.Controls.Add(this.textBox15);
+            this.panel43.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.panel43.Location = new System.Drawing.Point(88, 87);
+            this.panel43.Name = "panel43";
+            this.panel43.Size = new System.Drawing.Size(353, 32);
+            this.panel43.TabIndex = 77;
+            // 
+            // textBox15
+            // 
+            this.textBox15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(249)))), ((int)(((byte)(245)))));
+            this.textBox15.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox15.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(171)))), ((int)(((byte)(109)))));
+            this.textBox15.Location = new System.Drawing.Point(9, 8);
+            this.textBox15.Name = "textBox15";
+            this.textBox15.Size = new System.Drawing.Size(330, 15);
+            this.textBox15.TabIndex = 1;
+            this.textBox15.KeyUp += new System.Windows.Forms.KeyEventHandler(this.textBox15_KeyUp);
+            // 
+            // label56
+            // 
+            this.label56.AutoSize = true;
+            this.label56.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label56.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(69)))), ((int)(((byte)(2)))));
+            this.label56.Location = new System.Drawing.Point(85, 69);
+            this.label56.Name = "label56";
+            this.label56.Size = new System.Drawing.Size(83, 16);
+            this.label56.TabIndex = 76;
+            this.label56.Text = "Student_ID";
+            this.label56.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label57
+            // 
+            this.label57.AutoSize = true;
+            this.label57.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label57.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(69)))), ((int)(((byte)(2)))));
+            this.label57.Location = new System.Drawing.Point(560, 6);
+            this.label57.Name = "label57";
+            this.label57.Size = new System.Drawing.Size(169, 31);
+            this.label57.TabIndex = 75;
+            this.label57.Text = "Delete Data";
+            this.label57.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // panel44
+            // 
+            this.panel44.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(249)))), ((int)(((byte)(245)))));
+            this.panel44.Location = new System.Drawing.Point(88, 166);
+            this.panel44.Name = "panel44";
+            this.panel44.Size = new System.Drawing.Size(1031, 66);
+            this.panel44.TabIndex = 79;
             // 
             // Form1
             // 
@@ -2077,97 +2715,120 @@ namespace SchoolProject
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.panel7.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.panel6.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.panel5.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.SidePanel.ResumeLayout(false);
             this.ExpStudentDataPanel.ResumeLayout(false);
             this.SideSearchDataPanel.ResumeLayout(false);
             this.panel21.ResumeLayout(false);
-            this.SideDeleteDataPanel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).EndInit();
+            this.SideStudentDeleteData.ResumeLayout(false);
             this.panel19.ResumeLayout(false);
-            this.SideUpdateDataPanel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).EndInit();
+            this.SideStudentUpdateData.ResumeLayout(false);
             this.panel17.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();
             this.SideStudentInsertData.ResumeLayout(false);
             this.panel15.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
             this.SideBusDataPanel.ResumeLayout(false);
             this.panel13.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
             this.SideLibraryDataPanel.ResumeLayout(false);
             this.panel12.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
             this.SideStudentDataPanel.ResumeLayout(false);
             this.panel11.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
             this.SideDashboardPanel.ResumeLayout(false);
             this.panel10.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             this.SideRegistrationPanel.ResumeLayout(false);
             this.panel9.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             this.SideLoginPanel.ResumeLayout(false);
             this.panel8.ResumeLayout(false);
-            this.panel4.ResumeLayout(false);
-            this.DashboardPanel.ResumeLayout(false);
-            this.DashboardPanel.PerformLayout();
-            this.RegistrationPanel.ResumeLayout(false);
-            this.RegistrationPanel.PerformLayout();
-            this.RegistConfirmPassPanel.ResumeLayout(false);
-            this.RegistConfirmPassPanel.PerformLayout();
-            this.RegistPassPanel.ResumeLayout(false);
-            this.RegistPassPanel.PerformLayout();
-            this.RegistUserPanel.ResumeLayout(false);
-            this.RegistUserPanel.PerformLayout();
-            this.LoginPanel.ResumeLayout(false);
-            this.LoginPanel.PerformLayout();
-            this.LoginPassPanel.ResumeLayout(false);
-            this.LoginPassPanel.PerformLayout();
-            this.LoginUserPanel.ResumeLayout(false);
-            this.LoginUserPanel.PerformLayout();
-            this.StudentContainerDashboardPanel.ResumeLayout(false);
-            this.panel16.ResumeLayout(false);
-            this.StudentDataPanel.ResumeLayout(false);
-            this.StudentDataPanel.PerformLayout();
-            this.panel23.ResumeLayout(false);
-            this.panel24.ResumeLayout(false);
-            this.panel25.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel4.ResumeLayout(false);
+            this.StudentUpdateData.ResumeLayout(false);
+            this.StudentUpdateData.PerformLayout();
+            this.SuggestionPanel.ResumeLayout(false);
+            this.panel40.ResumeLayout(false);
+            this.panel33.ResumeLayout(false);
+            this.panel33.PerformLayout();
+            this.panel34.ResumeLayout(false);
+            this.panel34.PerformLayout();
+            this.panel35.ResumeLayout(false);
+            this.panel35.PerformLayout();
+            this.panel36.ResumeLayout(false);
+            this.panel36.PerformLayout();
+            this.panel37.ResumeLayout(false);
+            this.panel37.PerformLayout();
+            this.panel38.ResumeLayout(false);
+            this.panel38.PerformLayout();
+            this.panel39.ResumeLayout(false);
+            this.panel39.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox23)).EndInit();
             this.StudentInsertData.ResumeLayout(false);
             this.StudentInsertData.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox22)).EndInit();
+            this.panel31.ResumeLayout(false);
+            this.panel31.PerformLayout();
+            this.panel30.ResumeLayout(false);
+            this.panel30.PerformLayout();
             this.panel27.ResumeLayout(false);
             this.panel27.PerformLayout();
             this.panel28.ResumeLayout(false);
             this.panel28.PerformLayout();
             this.panel26.ResumeLayout(false);
             this.panel26.PerformLayout();
-            this.panel29.ResumeLayout(false);
-            this.panel29.PerformLayout();
-            this.panel30.ResumeLayout(false);
-            this.panel30.PerformLayout();
-            this.panel31.ResumeLayout(false);
-            this.panel31.PerformLayout();
             this.panel32.ResumeLayout(false);
             this.panel32.PerformLayout();
-            this.panel33.ResumeLayout(false);
-            this.panel33.PerformLayout();
+            this.panel29.ResumeLayout(false);
+            this.panel29.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox22)).EndInit();
+            this.StudentDataPanel.ResumeLayout(false);
+            this.StudentDataPanel.PerformLayout();
+            this.panel25.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).EndInit();
+            this.panel24.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).EndInit();
+            this.panel23.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).EndInit();
+            this.DashboardPanel.ResumeLayout(false);
+            this.DashboardPanel.PerformLayout();
+            this.StudentContainerDashboardPanel.ResumeLayout(false);
+            this.panel16.ResumeLayout(false);
+            this.RegistrationPanel.ResumeLayout(false);
+            this.RegistrationPanel.PerformLayout();
+            this.RegistConfirmPassPanel.ResumeLayout(false);
+            this.RegistConfirmPassPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
+            this.RegistPassPanel.ResumeLayout(false);
+            this.RegistPassPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
+            this.RegistUserPanel.ResumeLayout(false);
+            this.RegistUserPanel.PerformLayout();
+            this.LoginPanel.ResumeLayout(false);
+            this.LoginPanel.PerformLayout();
+            this.LoginPassPanel.ResumeLayout(false);
+            this.LoginPassPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            this.LoginUserPanel.ResumeLayout(false);
+            this.LoginUserPanel.PerformLayout();
+            this.StudentDeleteData.ResumeLayout(false);
+            this.StudentDeleteData.PerformLayout();
+            this.panel41.ResumeLayout(false);
+            this.panel42.ResumeLayout(false);
+            this.panel43.ResumeLayout(false);
+            this.panel43.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -2256,11 +2917,11 @@ namespace SchoolProject
         private System.Windows.Forms.Label label30;
         private System.Windows.Forms.Panel panel21;
         private System.Windows.Forms.PictureBox pictureBox18;
-        private System.Windows.Forms.Panel SideDeleteDataPanel;
+        private System.Windows.Forms.Panel SideStudentDeleteData;
         private System.Windows.Forms.Label label29;
         private System.Windows.Forms.Panel panel19;
         private System.Windows.Forms.PictureBox pictureBox17;
-        private System.Windows.Forms.Panel SideUpdateDataPanel;
+        private System.Windows.Forms.Panel SideStudentUpdateData;
         private System.Windows.Forms.Label label28;
         private System.Windows.Forms.Panel panel17;
         private System.Windows.Forms.PictureBox pictureBox16;
@@ -2290,32 +2951,78 @@ namespace SchoolProject
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Panel StudentInsertData;
-        private System.Windows.Forms.Panel panel28;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Label label34;
-        private System.Windows.Forms.Panel panel27;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label33;
         private System.Windows.Forms.PictureBox pictureBox22;
         private System.Windows.Forms.Label label32;
-        private System.Windows.Forms.Panel panel33;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.Label label40;
-        private System.Windows.Forms.Panel panel32;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.Label label39;
+        private System.Windows.Forms.Panel panel29;
+        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.Label label36;
+        private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Panel panel31;
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.Label label38;
         private System.Windows.Forms.Panel panel30;
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.Label label37;
-        private System.Windows.Forms.Panel panel29;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.Label label36;
+        private System.Windows.Forms.Panel panel27;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label33;
+        private System.Windows.Forms.Panel panel28;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Label label34;
         private System.Windows.Forms.Panel panel26;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Label label35;
+        private System.Windows.Forms.Panel panel32;
+        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.Label label39;
+        private System.Windows.Forms.Label label40;
+        private System.Windows.Forms.Label label41;
+        private System.Windows.Forms.Label label42;
+        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.Button InsertPageNewRecordButton;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private System.Windows.Forms.Panel StudentUpdateData;
+        private System.Windows.Forms.Button UpdatePageButton;
+        private System.Windows.Forms.Label label43;
+        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.Label label44;
+        private System.Windows.Forms.Panel panel33;
+        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.Label label45;
+        private System.Windows.Forms.Panel panel34;
+        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.Label label46;
+        private System.Windows.Forms.Panel panel35;
+        private System.Windows.Forms.TextBox textBox10;
+        private System.Windows.Forms.Label label47;
+        private System.Windows.Forms.Panel panel36;
+        private System.Windows.Forms.TextBox textBox11;
+        private System.Windows.Forms.Label label48;
+        private System.Windows.Forms.Panel panel37;
+        private System.Windows.Forms.TextBox textBox12;
+        private System.Windows.Forms.Label label49;
+        private System.Windows.Forms.Panel panel38;
+        private System.Windows.Forms.TextBox textBox13;
+        private System.Windows.Forms.Label label50;
+        private System.Windows.Forms.Label label51;
+        private System.Windows.Forms.ComboBox comboBox4;
+        private System.Windows.Forms.Panel panel39;
+        private System.Windows.Forms.TextBox textBox14;
+        private System.Windows.Forms.Label label52;
+        private System.Windows.Forms.PictureBox pictureBox23;
+        private System.Windows.Forms.Label label53;
+        private System.Windows.Forms.Panel SuggestionPanel;
+        private System.Windows.Forms.Panel panel40;
+        private System.Windows.Forms.Label label54;
+        private System.Windows.Forms.Panel StudentDeleteData;
+        private System.Windows.Forms.Panel panel41;
+        private System.Windows.Forms.Panel panel42;
+        private System.Windows.Forms.Label label55;
+        private System.Windows.Forms.Panel panel43;
+        private System.Windows.Forms.TextBox textBox15;
+        private System.Windows.Forms.Label label56;
+        private System.Windows.Forms.Label label57;
+        private System.Windows.Forms.Panel panel44;
     }
 }
 
